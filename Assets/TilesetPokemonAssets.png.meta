@@ -1,0 +1,3386 @@
+fileFormatVersion: 2
+guid: 7f33857716f15a94cb92e7d421168171
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6577302339018589071
+    second: TilesetPokemonAssets_0
+  - first:
+      213: 7497757135284234006
+    second: TilesetPokemonAssets_1
+  - first:
+      213: -4379110014749385043
+    second: TilesetPokemonAssets_2
+  - first:
+      213: 528254279689386878
+    second: TilesetPokemonAssets_3
+  - first:
+      213: 2567281966592332342
+    second: TilesetPokemonAssets_4
+  - first:
+      213: -6401795837641388155
+    second: TilesetPokemonAssets_5
+  - first:
+      213: 4476421846103372803
+    second: TilesetPokemonAssets_6
+  - first:
+      213: 3596526037308267895
+    second: TilesetPokemonAssets_7
+  - first:
+      213: -2808248085534048631
+    second: TilesetPokemonAssets_8
+  - first:
+      213: -1766835917072699167
+    second: TilesetPokemonAssets_9
+  - first:
+      213: 2641787787527881019
+    second: TilesetPokemonAssets_10
+  - first:
+      213: -6200662905405961493
+    second: TilesetPokemonAssets_11
+  - first:
+      213: 2326403530030581485
+    second: TilesetPokemonAssets_12
+  - first:
+      213: 7224601353341738792
+    second: TilesetPokemonAssets_13
+  - first:
+      213: -4674618992764815753
+    second: TilesetPokemonAssets_14
+  - first:
+      213: -268470363058274857
+    second: TilesetPokemonAssets_15
+  - first:
+      213: -4225492348493042599
+    second: TilesetPokemonAssets_16
+  - first:
+      213: 6069469354786966635
+    second: TilesetPokemonAssets_17
+  - first:
+      213: 8052236857789692043
+    second: TilesetPokemonAssets_18
+  - first:
+      213: -4688858311528180978
+    second: TilesetPokemonAssets_19
+  - first:
+      213: -6158303216076283516
+    second: TilesetPokemonAssets_20
+  - first:
+      213: 3515576928017600528
+    second: TilesetPokemonAssets_21
+  - first:
+      213: -7922133272811719617
+    second: TilesetPokemonAssets_22
+  - first:
+      213: -426054253055105546
+    second: TilesetPokemonAssets_23
+  - first:
+      213: 3196363183774132787
+    second: TilesetPokemonAssets_24
+  - first:
+      213: -6663004345584329182
+    second: TilesetPokemonAssets_25
+  - first:
+      213: 8894615005200351728
+    second: TilesetPokemonAssets_26
+  - first:
+      213: -8895706880079694654
+    second: TilesetPokemonAssets_27
+  - first:
+      213: -2708306044516468097
+    second: TilesetPokemonAssets_28
+  - first:
+      213: -341180298773386904
+    second: TilesetPokemonAssets_29
+  - first:
+      213: 5689211157013363423
+    second: TilesetPokemonAssets_30
+  - first:
+      213: -1343721439414223039
+    second: TilesetPokemonAssets_31
+  - first:
+      213: -7549622857511460925
+    second: TilesetPokemonAssets_32
+  - first:
+      213: 8011892051385666637
+    second: TilesetPokemonAssets_33
+  - first:
+      213: 6239755993023018413
+    second: TilesetPokemonAssets_34
+  - first:
+      213: -1693586133678182866
+    second: TilesetPokemonAssets_35
+  - first:
+      213: 2834411154187461935
+    second: TilesetPokemonAssets_36
+  - first:
+      213: -7280776018777617077
+    second: TilesetPokemonAssets_37
+  - first:
+      213: 8349915088144964552
+    second: TilesetPokemonAssets_38
+  - first:
+      213: 8372871407639834059
+    second: TilesetPokemonAssets_39
+  - first:
+      213: -1996474632339380805
+    second: TilesetPokemonAssets_40
+  - first:
+      213: -3818833527099115465
+    second: TilesetPokemonAssets_41
+  - first:
+      213: 1915633036545062642
+    second: TilesetPokemonAssets_42
+  - first:
+      213: 43680367733726671
+    second: TilesetPokemonAssets_43
+  - first:
+      213: -7046872988953526578
+    second: TilesetPokemonAssets_44
+  - first:
+      213: -7888797780917883389
+    second: TilesetPokemonAssets_45
+  - first:
+      213: 6164228005435898635
+    second: TilesetPokemonAssets_46
+  - first:
+      213: -1727833094635986194
+    second: TilesetPokemonAssets_47
+  - first:
+      213: 1491406600154485797
+    second: TilesetPokemonAssets_48
+  - first:
+      213: 8737997683041395928
+    second: TilesetPokemonAssets_49
+  - first:
+      213: 8995490536049764227
+    second: TilesetPokemonAssets_50
+  - first:
+      213: 3566991688454281682
+    second: TilesetPokemonAssets_51
+  - first:
+      213: -1504771251341915582
+    second: TilesetPokemonAssets_52
+  - first:
+      213: 4349296018286712160
+    second: TilesetPokemonAssets_53
+  - first:
+      213: -6112871936056835427
+    second: TilesetPokemonAssets_54
+  - first:
+      213: -6104711516377993227
+    second: TilesetPokemonAssets_55
+  - first:
+      213: 6966990779854600847
+    second: TilesetPokemonAssets_56
+  - first:
+      213: -4783472685813255745
+    second: TilesetPokemonAssets_57
+  - first:
+      213: 6766640602802651641
+    second: TilesetPokemonAssets_58
+  - first:
+      213: 2657490458006521334
+    second: TilesetPokemonAssets_59
+  - first:
+      213: 5190141029880636988
+    second: TilesetPokemonAssets_60
+  - first:
+      213: 5051744229956684655
+    second: TilesetPokemonAssets_61
+  - first:
+      213: -7286133790327991142
+    second: TilesetPokemonAssets_62
+  - first:
+      213: -4521915483415974571
+    second: TilesetPokemonAssets_63
+  - first:
+      213: 4069578392748319322
+    second: TilesetPokemonAssets_64
+  - first:
+      213: -7781183138453631661
+    second: TilesetPokemonAssets_65
+  - first:
+      213: 9120742415814876262
+    second: TilesetPokemonAssets_66
+  - first:
+      213: -84725273447771277
+    second: TilesetPokemonAssets_67
+  - first:
+      213: 4489703775474262828
+    second: TilesetPokemonAssets_68
+  - first:
+      213: -3052889946833765870
+    second: TilesetPokemonAssets_69
+  - first:
+      213: -1841381895552498551
+    second: TilesetPokemonAssets_70
+  - first:
+      213: 5148031945006023270
+    second: TilesetPokemonAssets_71
+  - first:
+      213: -812040351142965070
+    second: TilesetPokemonAssets_72
+  - first:
+      213: -5527445623586626128
+    second: TilesetPokemonAssets_73
+  - first:
+      213: 1378251301119449377
+    second: TilesetPokemonAssets_74
+  - first:
+      213: 8234726974720925090
+    second: TilesetPokemonAssets_75
+  - first:
+      213: -4141788402815860330
+    second: TilesetPokemonAssets_76
+  - first:
+      213: -3785264273037998929
+    second: TilesetPokemonAssets_77
+  - first:
+      213: 3455703990718424111
+    second: TilesetPokemonAssets_78
+  - first:
+      213: -2604728433064496381
+    second: TilesetPokemonAssets_79
+  - first:
+      213: -5836189959805816129
+    second: TilesetPokemonAssets_80
+  - first:
+      213: 1856523955360263716
+    second: TilesetPokemonAssets_81
+  - first:
+      213: 175510603670059128
+    second: TilesetPokemonAssets_82
+  - first:
+      213: -8261721073735923382
+    second: TilesetPokemonAssets_83
+  - first:
+      213: -7359627176768626671
+    second: TilesetPokemonAssets_84
+  - first:
+      213: -3056002360408795753
+    second: TilesetPokemonAssets_85
+  - first:
+      213: -9079627015130065083
+    second: TilesetPokemonAssets_86
+  - first:
+      213: -2928970334234812893
+    second: TilesetPokemonAssets_87
+  - first:
+      213: 1779406112750404420
+    second: TilesetPokemonAssets_88
+  - first:
+      213: 5928014073334864635
+    second: TilesetPokemonAssets_89
+  - first:
+      213: -2687234659058471815
+    second: TilesetPokemonAssets_90
+  - first:
+      213: 6003474209524109685
+    second: TilesetPokemonAssets_91
+  - first:
+      213: -3741496953147586821
+    second: TilesetPokemonAssets_92
+  - first:
+      213: 8315438939168130929
+    second: TilesetPokemonAssets_93
+  - first:
+      213: -2791386385748381355
+    second: TilesetPokemonAssets_94
+  - first:
+      213: 2858060610600946093
+    second: TilesetPokemonAssets_95
+  - first:
+      213: 3088592659302672270
+    second: TilesetPokemonAssets_96
+  - first:
+      213: 3531926395851177633
+    second: TilesetPokemonAssets_97
+  - first:
+      213: 1799670311655526110
+    second: TilesetPokemonAssets_98
+  - first:
+      213: -231825689503833284
+    second: TilesetPokemonAssets_99
+  - first:
+      213: 7461491950790328278
+    second: TilesetPokemonAssets_100
+  - first:
+      213: -8274840691312351681
+    second: TilesetPokemonAssets_101
+  - first:
+      213: -971460277733202392
+    second: TilesetPokemonAssets_102
+  - first:
+      213: -5707001008433762548
+    second: TilesetPokemonAssets_103
+  - first:
+      213: 5657433243904277912
+    second: TilesetPokemonAssets_104
+  - first:
+      213: -6475003283516589611
+    second: TilesetPokemonAssets_105
+  - first:
+      213: 2234946598176987872
+    second: TilesetPokemonAssets_106
+  - first:
+      213: -6829382033127945214
+    second: TilesetPokemonAssets_107
+  - first:
+      213: -1526722875689571772
+    second: TilesetPokemonAssets_108
+  - first:
+      213: 7497096175744221389
+    second: TilesetPokemonAssets_109
+  - first:
+      213: -6065784391066241524
+    second: TilesetPokemonAssets_110
+  - first:
+      213: 8461699151406906883
+    second: TilesetPokemonAssets_111
+  - first:
+      213: -4752813193043054203
+    second: TilesetPokemonAssets_112
+  - first:
+      213: -5493540264048047128
+    second: TilesetPokemonAssets_113
+  - first:
+      213: -9077041429382528866
+    second: TilesetPokemonAssets_114
+  - first:
+      213: -6118707713211905055
+    second: TilesetPokemonAssets_115
+  - first:
+      213: 8452600098369397331
+    second: TilesetPokemonAssets_116
+  - first:
+      213: 4358218194768772803
+    second: TilesetPokemonAssets_117
+  - first:
+      213: -8103769455554522294
+    second: TilesetPokemonAssets_118
+  - first:
+      213: -563643324788998945
+    second: TilesetPokemonAssets_119
+  - first:
+      213: -3029535602807871380
+    second: TilesetPokemonAssets_120
+  - first:
+      213: -725934520140647009
+    second: TilesetPokemonAssets_121
+  - first:
+      213: -3252637637345671881
+    second: TilesetPokemonAssets_122
+  - first:
+      213: 6906409124011194757
+    second: TilesetPokemonAssets_123
+  - first:
+      213: 7410780583452557000
+    second: TilesetPokemonAssets_124
+  - first:
+      213: -7030154621100138961
+    second: TilesetPokemonAssets_125
+  - first:
+      213: 2227971398656929878
+    second: TilesetPokemonAssets_126
+  - first:
+      213: 3695402676835354477
+    second: TilesetPokemonAssets_127
+  - first:
+      213: -2343500596673558979
+    second: TilesetPokemonAssets_128
+  - first:
+      213: -6685728423772648873
+    second: TilesetPokemonAssets_129
+  - first:
+      213: -2395547102400132066
+    second: TilesetPokemonAssets_130
+  - first:
+      213: -694488907617778913
+    second: TilesetPokemonAssets_131
+  - first:
+      213: -2385245816616139871
+    second: TilesetPokemonAssets_132
+  - first:
+      213: -8918249046483768270
+    second: TilesetPokemonAssets_133
+  - first:
+      213: 5597161388432029792
+    second: TilesetPokemonAssets_134
+  - first:
+      213: 3432501148800633888
+    second: TilesetPokemonAssets_135
+  - first:
+      213: -4657969045765997429
+    second: TilesetPokemonAssets_136
+  - first:
+      213: -2151356003579679396
+    second: TilesetPokemonAssets_137
+  - first:
+      213: 6253788952532977200
+    second: TilesetPokemonAssets_138
+  - first:
+      213: -5398953788523137809
+    second: TilesetPokemonAssets_139
+  - first:
+      213: 4713637966130905991
+    second: TilesetPokemonAssets_140
+  - first:
+      213: -54080422796298116
+    second: TilesetPokemonAssets_141
+  - first:
+      213: 4039344080185267955
+    second: TilesetPokemonAssets_142
+  - first:
+      213: -2123506796376379404
+    second: TilesetPokemonAssets_143
+  - first:
+      213: -8478526838476272760
+    second: TilesetPokemonAssets_144
+  - first:
+      213: -634293231131271197
+    second: TilesetPokemonAssets_145
+  - first:
+      213: -5670289384308801852
+    second: TilesetPokemonAssets_146
+  - first:
+      213: 864277210894130640
+    second: TilesetPokemonAssets_147
+  - first:
+      213: 1639258851775393150
+    second: TilesetPokemonAssets_148
+  - first:
+      213: 4727465757356308942
+    second: TilesetPokemonAssets_149
+  - first:
+      213: 2841173103100714435
+    second: TilesetPokemonAssets_150
+  - first:
+      213: -6833004900595339265
+    second: TilesetPokemonAssets_151
+  - first:
+      213: -2123512187987442904
+    second: TilesetPokemonAssets_152
+  - first:
+      213: -6467046744338589937
+    second: TilesetPokemonAssets_153
+  - first:
+      213: 3498844021345568905
+    second: TilesetPokemonAssets_154
+  - first:
+      213: -2710171999951578642
+    second: TilesetPokemonAssets_155
+  - first:
+      213: -7208581142918533348
+    second: TilesetPokemonAssets_156
+  - first:
+      213: -824630931343516811
+    second: TilesetPokemonAssets_157
+  - first:
+      213: 7351712375691879859
+    second: TilesetPokemonAssets_158
+  - first:
+      213: 841040078049510220
+    second: TilesetPokemonAssets_159
+  - first:
+      213: -1123525748478464229
+    second: TilesetPokemonAssets_160
+  - first:
+      213: -4358815857287029919
+    second: TilesetPokemonAssets_161
+  - first:
+      213: -5515770546433230982
+    second: TilesetPokemonAssets_162
+  - first:
+      213: -1443511379439869803
+    second: TilesetPokemonAssets_163
+  - first:
+      213: -527518981862813614
+    second: TilesetPokemonAssets_164
+  - first:
+      213: 7061053900168208848
+    second: TilesetPokemonAssets_165
+  - first:
+      213: -122747796279292922
+    second: TilesetPokemonAssets_166
+  - first:
+      213: -5939578534402396243
+    second: TilesetPokemonAssets_167
+  - first:
+      213: -1435558264552683963
+    second: TilesetPokemonAssets_168
+  - first:
+      213: 3334999525150569197
+    second: TilesetPokemonAssets_169
+  - first:
+      213: -4661217483440397116
+    second: TilesetPokemonAssets_170
+  - first:
+      213: 2570718058937347968
+    second: TilesetPokemonAssets_171
+  - first:
+      213: 8512470554110151798
+    second: TilesetPokemonAssets_172
+  - first:
+      213: -2940856880398110673
+    second: TilesetPokemonAssets_173
+  - first:
+      213: -6834659187060992626
+    second: TilesetPokemonAssets_174
+  - first:
+      213: -2848383217756109476
+    second: TilesetPokemonAssets_175
+  - first:
+      213: 5488978040438281972
+    second: TilesetPokemonAssets_176
+  - first:
+      213: -4929087422337115717
+    second: TilesetPokemonAssets_177
+  - first:
+      213: 8988440289187465216
+    second: TilesetPokemonAssets_178
+  - first:
+      213: -6190009977185852067
+    second: TilesetPokemonAssets_179
+  - first:
+      213: 8570718155705857584
+    second: TilesetPokemonAssets_180
+  - first:
+      213: 8685631741925034081
+    second: TilesetPokemonAssets_181
+  - first:
+      213: -1640513444048455672
+    second: TilesetPokemonAssets_182
+  - first:
+      213: 2686136016962964006
+    second: TilesetPokemonAssets_183
+  - first:
+      213: 5783243725238102220
+    second: TilesetPokemonAssets_184
+  - first:
+      213: -7422791854750406552
+    second: TilesetPokemonAssets_185
+  - first:
+      213: 3946633017066680325
+    second: TilesetPokemonAssets_186
+  - first:
+      213: 8910775937829097866
+    second: TilesetPokemonAssets_187
+  - first:
+      213: 3824579483382520570
+    second: TilesetPokemonAssets_188
+  - first:
+      213: 2940361743074658694
+    second: TilesetPokemonAssets_189
+  - first:
+      213: 6983351070560552852
+    second: TilesetPokemonAssets_190
+  - first:
+      213: -5931293362526197193
+    second: TilesetPokemonAssets_191
+  - first:
+      213: 6848274754495763292
+    second: TilesetPokemonAssets_192
+  - first:
+      213: -8183967069903642870
+    second: TilesetPokemonAssets_193
+  - first:
+      213: 5767620448804719019
+    second: TilesetPokemonAssets_194
+  - first:
+      213: -4376536371376308915
+    second: TilesetPokemonAssets_195
+  - first:
+      213: -5105921349507156044
+    second: TilesetPokemonAssets_196
+  - first:
+      213: -2759440360443961759
+    second: TilesetPokemonAssets_197
+  - first:
+      213: -569504272899197660
+    second: TilesetPokemonAssets_198
+  - first:
+      213: -147206468401759742
+    second: TilesetPokemonAssets_199
+  - first:
+      213: -8688756652554740124
+    second: TilesetPokemonAssets_200
+  - first:
+      213: 6862765511021056919
+    second: TilesetPokemonAssets_201
+  - first:
+      213: 4016413265607804682
+    second: TilesetPokemonAssets_202
+  - first:
+      213: -4392490036310460491
+    second: TilesetPokemonAssets_203
+  - first:
+      213: 5322486364713828715
+    second: TilesetPokemonAssets_204
+  - first:
+      213: -2038832579479448471
+    second: TilesetPokemonAssets_205
+  - first:
+      213: -9119872632323792732
+    second: TilesetPokemonAssets_206
+  - first:
+      213: 5740772945434504593
+    second: TilesetPokemonAssets_207
+  - first:
+      213: 1921987929050325339
+    second: TilesetPokemonAssets_208
+  - first:
+      213: 3692245182383453806
+    second: TilesetPokemonAssets_209
+  - first:
+      213: -3112918566189866830
+    second: TilesetPokemonAssets_210
+  - first:
+      213: -2105078557839488689
+    second: TilesetPokemonAssets_211
+  - first:
+      213: 3800679877241303490
+    second: TilesetPokemonAssets_212
+  - first:
+      213: 8151232509118821725
+    second: TilesetPokemonAssets_213
+  - first:
+      213: 9212123580637004010
+    second: TilesetPokemonAssets_214
+  - first:
+      213: 2179209513519524606
+    second: TilesetPokemonAssets_215
+  - first:
+      213: 648379881368331994
+    second: TilesetPokemonAssets_216
+  - first:
+      213: 5225426196233178041
+    second: TilesetPokemonAssets_217
+  - first:
+      213: 8252166574034399402
+    second: TilesetPokemonAssets_218
+  - first:
+      213: 5578479651351976722
+    second: TilesetPokemonAssets_219
+  - first:
+      213: 358383876775691051
+    second: TilesetPokemonAssets_220
+  - first:
+      213: -6685240756367528476
+    second: TilesetPokemonAssets_221
+  - first:
+      213: -742427801734748493
+    second: TilesetPokemonAssets_222
+  - first:
+      213: -8319509352627749145
+    second: TilesetPokemonAssets_223
+  - first:
+      213: 1791694330373836569
+    second: TilesetPokemonAssets_224
+  - first:
+      213: -2105117962463166244
+    second: TilesetPokemonAssets_225
+  - first:
+      213: -193297500054515314
+    second: TilesetPokemonAssets_226
+  - first:
+      213: -1470028224762905690
+    second: TilesetPokemonAssets_227
+  - first:
+      213: 1737919684242612431
+    second: TilesetPokemonAssets_228
+  - first:
+      213: -3682752710739900633
+    second: TilesetPokemonAssets_229
+  - first:
+      213: 2627501371948303365
+    second: TilesetPokemonAssets_230
+  - first:
+      213: 3853131479746884808
+    second: TilesetPokemonAssets_231
+  - first:
+      213: 1930147990391144595
+    second: TilesetPokemonAssets_232
+  - first:
+      213: -1104193497876496299
+    second: TilesetPokemonAssets_233
+  - first:
+      213: 7157517441546549222
+    second: TilesetPokemonAssets_234
+  - first:
+      213: -8363979343253202281
+    second: TilesetPokemonAssets_235
+  - first:
+      213: 2368402883622231154
+    second: TilesetPokemonAssets_236
+  - first:
+      213: -3317956178499629318
+    second: TilesetPokemonAssets_237
+  - first:
+      213: -8625299624457170647
+    second: TilesetPokemonAssets_238
+  - first:
+      213: -2133890772291744651
+    second: TilesetPokemonAssets_239
+  - first:
+      213: -4451565584226965035
+    second: TilesetPokemonAssets_240
+  - first:
+      213: -8042405721340401114
+    second: TilesetPokemonAssets_241
+  - first:
+      213: -2722944122901318925
+    second: TilesetPokemonAssets_242
+  - first:
+      213: -62222284276468512
+    second: TilesetPokemonAssets_243
+  - first:
+      213: -2894098180714159428
+    second: TilesetPokemonAssets_244
+  - first:
+      213: 4345470400738523382
+    second: TilesetPokemonAssets_245
+  - first:
+      213: 1665154032686295253
+    second: TilesetPokemonAssets_246
+  - first:
+      213: -8030863668369149871
+    second: TilesetPokemonAssets_247
+  - first:
+      213: 967078882341907606
+    second: TilesetPokemonAssets_248
+  - first:
+      213: 3200730744742214915
+    second: TilesetPokemonAssets_249
+  - first:
+      213: 6865404683253207653
+    second: TilesetPokemonAssets_250
+  - first:
+      213: 7701217903502668226
+    second: TilesetPokemonAssets_251
+  - first:
+      213: -5926993267629530150
+    second: TilesetPokemonAssets_252
+  - first:
+      213: -9102054772811111181
+    second: TilesetPokemonAssets_253
+  - first:
+      213: 3237076959813083770
+    second: TilesetPokemonAssets_254
+  - first:
+      213: 2254478610618732503
+    second: TilesetPokemonAssets_255
+  - first:
+      213: 3939687793673430116
+    second: TilesetPokemonAssets_256
+  - first:
+      213: 7435517080347994083
+    second: TilesetPokemonAssets_257
+  - first:
+      213: -2411789084988085613
+    second: TilesetPokemonAssets_258
+  - first:
+      213: 3866932955416684798
+    second: TilesetPokemonAssets_259
+  - first:
+      213: -778215203294128220
+    second: TilesetPokemonAssets_260
+  - first:
+      213: 6864475361049069411
+    second: TilesetPokemonAssets_261
+  - first:
+      213: -654073854056104797
+    second: TilesetPokemonAssets_262
+  - first:
+      213: -6441890878003451850
+    second: TilesetPokemonAssets_263
+  - first:
+      213: 7450025398460393116
+    second: TilesetPokemonAssets_264
+  - first:
+      213: -5014002883274456980
+    second: TilesetPokemonAssets_265
+  - first:
+      213: -6632334507190990378
+    second: TilesetPokemonAssets_266
+  - first:
+      213: -7095588007667853762
+    second: TilesetPokemonAssets_267
+  - first:
+      213: -8257627096378511033
+    second: TilesetPokemonAssets_268
+  - first:
+      213: 5955858620055721671
+    second: TilesetPokemonAssets_269
+  - first:
+      213: -1012750543621997146
+    second: TilesetPokemonAssets_270
+  - first:
+      213: 2646179024828502832
+    second: TilesetPokemonAssets_271
+  - first:
+      213: -7739594565401001608
+    second: TilesetPokemonAssets_272
+  - first:
+      213: 2119415140950906554
+    second: TilesetPokemonAssets_273
+  - first:
+      213: -8838250059613900110
+    second: TilesetPokemonAssets_274
+  - first:
+      213: -5861582726063575852
+    second: TilesetPokemonAssets_275
+  - first:
+      213: 76931896273990986
+    second: TilesetPokemonAssets_276
+  - first:
+      213: 5750381011734247068
+    second: TilesetPokemonAssets_277
+  - first:
+      213: 5798662225865368800
+    second: TilesetPokemonAssets_278
+  - first:
+      213: 7237824126782618349
+    second: TilesetPokemonAssets_279
+  - first:
+      213: 1576142159451893991
+    second: TilesetPokemonAssets_280
+  - first:
+      213: -6926932843932973914
+    second: TilesetPokemonAssets_281
+  - first:
+      213: -5171939381442988118
+    second: TilesetPokemonAssets_282
+  - first:
+      213: -4023294668711184925
+    second: TilesetPokemonAssets_283
+  - first:
+      213: 47271643772403292
+    second: TilesetPokemonAssets_284
+  - first:
+      213: -1384040892945926872
+    second: TilesetPokemonAssets_285
+  - first:
+      213: 7958006049277694057
+    second: TilesetPokemonAssets_286
+  - first:
+      213: 7576281114568368052
+    second: TilesetPokemonAssets_287
+  - first:
+      213: -7871374059372689329
+    second: TilesetPokemonAssets_288
+  - first:
+      213: 305219395793855613
+    second: TilesetPokemonAssets_289
+  - first:
+      213: 4098130351094236406
+    second: TilesetPokemonAssets_290
+  - first:
+      213: 4413783476769249016
+    second: TilesetPokemonAssets_291
+  - first:
+      213: -5353753154216708167
+    second: TilesetPokemonAssets_292
+  - first:
+      213: -2153870905033587925
+    second: TilesetPokemonAssets_293
+  - first:
+      213: 6006897139463859214
+    second: TilesetPokemonAssets_294
+  - first:
+      213: -6623464472367702010
+    second: TilesetPokemonAssets_295
+  - first:
+      213: -5594842174293442051
+    second: TilesetPokemonAssets_296
+  - first:
+      213: 8161472002181216074
+    second: TilesetPokemonAssets_297
+  - first:
+      213: 4914884070671723119
+    second: TilesetPokemonAssets_298
+  - first:
+      213: -1689886707253241889
+    second: TilesetPokemonAssets_299
+  - first:
+      213: -4335113172978653901
+    second: TilesetPokemonAssets_300
+  - first:
+      213: 7468015953606902972
+    second: TilesetPokemonAssets_301
+  - first:
+      213: -33613258299451858
+    second: TilesetPokemonAssets_302
+  - first:
+      213: 2072908814696352698
+    second: TilesetPokemonAssets_303
+  - first:
+      213: -4966640118293454736
+    second: TilesetPokemonAssets_304
+  - first:
+      213: -2970565748525203312
+    second: TilesetPokemonAssets_305
+  - first:
+      213: -6269570183332062797
+    second: TilesetPokemonAssets_306
+  - first:
+      213: 7208204400404857059
+    second: TilesetPokemonAssets_307
+  - first:
+      213: -3248877009773356140
+    second: TilesetPokemonAssets_308
+  - first:
+      213: 499926748362023522
+    second: TilesetPokemonAssets_309
+  - first:
+      213: 7317049116526877201
+    second: TilesetPokemonAssets_310
+  - first:
+      213: -530905306362821533
+    second: TilesetPokemonAssets_311
+  - first:
+      213: 4386668914811742213
+    second: TilesetPokemonAssets_312
+  - first:
+      213: 4694602903715423382
+    second: TilesetPokemonAssets_313
+  - first:
+      213: -6299368272507019115
+    second: TilesetPokemonAssets_314
+  - first:
+      213: 1472445445841285958
+    second: TilesetPokemonAssets_315
+  - first:
+      213: -7611344123168189288
+    second: TilesetPokemonAssets_316
+  - first:
+      213: -778808353144881427
+    second: TilesetPokemonAssets_317
+  - first:
+      213: -7360557416848486398
+    second: TilesetPokemonAssets_318
+  - first:
+      213: -2524570775939090815
+    second: TilesetPokemonAssets_319
+  - first:
+      213: 8944641490164964831
+    second: TilesetPokemonAssets_320
+  - first:
+      213: -8420104230491703621
+    second: TilesetPokemonAssets_321
+  - first:
+      213: -4307071937450787036
+    second: TilesetPokemonAssets_322
+  - first:
+      213: -8411369262266078751
+    second: TilesetPokemonAssets_323
+  - first:
+      213: -3756877955299099409
+    second: TilesetPokemonAssets_324
+  - first:
+      213: -452796226316601077
+    second: TilesetPokemonAssets_325
+  - first:
+      213: 7124755378691442733
+    second: TilesetPokemonAssets_326
+  - first:
+      213: -7742283887833590677
+    second: TilesetPokemonAssets_327
+  - first:
+      213: -5588986871979131138
+    second: TilesetPokemonAssets_328
+  - first:
+      213: -6127122829583404080
+    second: TilesetPokemonAssets_329
+  - first:
+      213: -5293051994156815703
+    second: TilesetPokemonAssets_330
+  - first:
+      213: -5875914793056845180
+    second: TilesetPokemonAssets_331
+  - first:
+      213: 8822491411644809423
+    second: TilesetPokemonAssets_332
+  - first:
+      213: 459885387197630090
+    second: TilesetPokemonAssets_333
+  - first:
+      213: 1017890427176491691
+    second: TilesetPokemonAssets_334
+  - first:
+      213: 1682398973525378640
+    second: TilesetPokemonAssets_335
+  - first:
+      213: -5634501230818362236
+    second: TilesetPokemonAssets_336
+  - first:
+      213: 7128638306121548686
+    second: TilesetPokemonAssets_337
+  - first:
+      213: 8893510072426532974
+    second: TilesetPokemonAssets_338
+  - first:
+      213: 4257108691034334774
+    second: TilesetPokemonAssets_339
+  - first:
+      213: 5864762049856275325
+    second: TilesetPokemonAssets_340
+  - first:
+      213: 6797802043277567445
+    second: TilesetPokemonAssets_341
+  - first:
+      213: -857925605681024166
+    second: TilesetPokemonAssets_342
+  - first:
+      213: -4331186819863894322
+    second: TilesetPokemonAssets_343
+  - first:
+      213: 5743727177892751064
+    second: TilesetPokemonAssets_344
+  - first:
+      213: 7238007054680530581
+    second: TilesetPokemonAssets_345
+  - first:
+      213: 7220992719873860535
+    second: TilesetPokemonAssets_346
+  - first:
+      213: 8275690796170457768
+    second: TilesetPokemonAssets_347
+  - first:
+      213: 2472488682234276000
+    second: TilesetPokemonAssets_348
+  - first:
+      213: 1944794642809864030
+    second: TilesetPokemonAssets_349
+  - first:
+      213: 1292434278583539114
+    second: TilesetPokemonAssets_350
+  - first:
+      213: 7879628967802920809
+    second: TilesetPokemonAssets_351
+  - first:
+      213: -4442836551562428700
+    second: TilesetPokemonAssets_352
+  - first:
+      213: -8472896967249188612
+    second: TilesetPokemonAssets_353
+  - first:
+      213: -2546003519284867741
+    second: TilesetPokemonAssets_354
+  - first:
+      213: -8880093195482841370
+    second: TilesetPokemonAssets_355
+  - first:
+      213: -3620948854221794209
+    second: TilesetPokemonAssets_356
+  - first:
+      213: 5470043630731991390
+    second: TilesetPokemonAssets_357
+  - first:
+      213: -4495977479970703596
+    second: TilesetPokemonAssets_358
+  - first:
+      213: -5316981184887627967
+    second: TilesetPokemonAssets_359
+  - first:
+      213: -3794286894256519157
+    second: TilesetPokemonAssets_360
+  - first:
+      213: 6750312444253058235
+    second: TilesetPokemonAssets_361
+  - first:
+      213: -4100756260105775010
+    second: TilesetPokemonAssets_362
+  - first:
+      213: -4550046491272592903
+    second: TilesetPokemonAssets_363
+  - first:
+      213: 2694017292474860282
+    second: TilesetPokemonAssets_364
+  - first:
+      213: 4786396483012839264
+    second: TilesetPokemonAssets_365
+  - first:
+      213: -7734001954650466305
+    second: TilesetPokemonAssets_366
+  - first:
+      213: 2083273891554087311
+    second: TilesetPokemonAssets_367
+  - first:
+      213: -4159358503363077149
+    second: TilesetPokemonAssets_368
+  - first:
+      213: 5993001008055055619
+    second: TilesetPokemonAssets_369
+  - first:
+      213: -3788606958492567892
+    second: TilesetPokemonAssets_370
+  - first:
+      213: 6903308354047215225
+    second: TilesetPokemonAssets_371
+  - first:
+      213: -8721616305979376963
+    second: TilesetPokemonAssets_372
+  - first:
+      213: 2197861529052841619
+    second: TilesetPokemonAssets_373
+  - first:
+      213: -5305991028085959020
+    second: TilesetPokemonAssets_374
+  - first:
+      213: -5801093888705130829
+    second: TilesetPokemonAssets_375
+  - first:
+      213: -1114599469930373344
+    second: TilesetPokemonAssets_376
+  - first:
+      213: 7645957427463744282
+    second: TilesetPokemonAssets_377
+  - first:
+      213: 4100293601478566420
+    second: TilesetPokemonAssets_378
+  - first:
+      213: -4610805366219310885
+    second: TilesetPokemonAssets_379
+  - first:
+      213: 3671427357830142798
+    second: TilesetPokemonAssets_380
+  - first:
+      213: 4295529933358170839
+    second: TilesetPokemonAssets_381
+  - first:
+      213: 806288151452032637
+    second: TilesetPokemonAssets_382
+  - first:
+      213: -7656324476119355802
+    second: TilesetPokemonAssets_383
+  - first:
+      213: -7192114145103136300
+    second: TilesetPokemonAssets_384
+  - first:
+      213: 965405845094367971
+    second: TilesetPokemonAssets_385
+  - first:
+      213: -945806573382874768
+    second: TilesetPokemonAssets_386
+  - first:
+      213: 1510422259894762471
+    second: TilesetPokemonAssets_387
+  - first:
+      213: 8398844952030367240
+    second: TilesetPokemonAssets_388
+  - first:
+      213: -5706557467468695236
+    second: TilesetPokemonAssets_389
+  - first:
+      213: -8032398421958710839
+    second: TilesetPokemonAssets_390
+  - first:
+      213: 5432615091974206000
+    second: TilesetPokemonAssets_391
+  - first:
+      213: 7150671553604422218
+    second: TilesetPokemonAssets_392
+  - first:
+      213: -817206985305633704
+    second: TilesetPokemonAssets_393
+  - first:
+      213: -79979594371409185
+    second: TilesetPokemonAssets_394
+  - first:
+      213: 5508570188571296485
+    second: TilesetPokemonAssets_395
+  - first:
+      213: 460115186749734177
+    second: TilesetPokemonAssets_396
+  - first:
+      213: -4247830902927450293
+    second: TilesetPokemonAssets_397
+  - first:
+      213: 8371570007069384582
+    second: TilesetPokemonAssets_398
+  - first:
+      213: -7913494397223000116
+    second: TilesetPokemonAssets_399
+  - first:
+      213: 7107507781707043171
+    second: TilesetPokemonAssets_400
+  - first:
+      213: -699159803795344348
+    second: TilesetPokemonAssets_401
+  - first:
+      213: -667179944175454349
+    second: TilesetPokemonAssets_402
+  - first:
+      213: -7467648616481373842
+    second: TilesetPokemonAssets_403
+  - first:
+      213: -1014445067407303791
+    second: TilesetPokemonAssets_404
+  - first:
+      213: 6005563980086579301
+    second: TilesetPokemonAssets_405
+  - first:
+      213: -8207722894570437119
+    second: TilesetPokemonAssets_406
+  - first:
+      213: -5002564509327492258
+    second: TilesetPokemonAssets_407
+  - first:
+      213: 6525257313782159928
+    second: TilesetPokemonAssets_408
+  - first:
+      213: 4055256440894482756
+    second: TilesetPokemonAssets_409
+  - first:
+      213: 287293495373660346
+    second: TilesetPokemonAssets_410
+  - first:
+      213: 4727398379357009025
+    second: TilesetPokemonAssets_411
+  - first:
+      213: -8914439906691460919
+    second: TilesetPokemonAssets_412
+  - first:
+      213: 8056009289434188903
+    second: TilesetPokemonAssets_413
+  - first:
+      213: -4962262974590747380
+    second: TilesetPokemonAssets_414
+  - first:
+      213: 4639399698981674213
+    second: TilesetPokemonAssets_415
+  - first:
+      213: -8804348692022856075
+    second: TilesetPokemonAssets_416
+  - first:
+      213: -3886269130348667020
+    second: TilesetPokemonAssets_417
+  - first:
+      213: 803599598934065174
+    second: TilesetPokemonAssets_418
+  - first:
+      213: -6288129394131980966
+    second: TilesetPokemonAssets_419
+  - first:
+      213: 347854411985266744
+    second: TilesetPokemonAssets_420
+  - first:
+      213: -6566719650547162751
+    second: TilesetPokemonAssets_421
+  - first:
+      213: -8835709737450774373
+    second: TilesetPokemonAssets_422
+  - first:
+      213: -3789256735158954380
+    second: TilesetPokemonAssets_423
+  - first:
+      213: 3924247759302929971
+    second: TilesetPokemonAssets_424
+  - first:
+      213: 1192619615965234020
+    second: TilesetPokemonAssets_425
+  - first:
+      213: 3355631134987780219
+    second: TilesetPokemonAssets_426
+  - first:
+      213: 8361314550446989670
+    second: TilesetPokemonAssets_427
+  - first:
+      213: 3273189586152530729
+    second: TilesetPokemonAssets_428
+  - first:
+      213: 7022798082726943177
+    second: TilesetPokemonAssets_429
+  - first:
+      213: 165823601568931451
+    second: TilesetPokemonAssets_430
+  - first:
+      213: -2574451631168707867
+    second: TilesetPokemonAssets_431
+  - first:
+      213: -9100104348220900264
+    second: TilesetPokemonAssets_432
+  - first:
+      213: 3567799616493754486
+    second: TilesetPokemonAssets_433
+  - first:
+      213: -6453744084429826170
+    second: TilesetPokemonAssets_434
+  - first:
+      213: -5809177836161320106
+    second: TilesetPokemonAssets_435
+  - first:
+      213: 1593588041714472027
+    second: TilesetPokemonAssets_436
+  - first:
+      213: 8625695530837592784
+    second: TilesetPokemonAssets_437
+  - first:
+      213: 4564821112973120655
+    second: TilesetPokemonAssets_438
+  - first:
+      213: -2150502383261267210
+    second: TilesetPokemonAssets_439
+  - first:
+      213: 7962200903503406090
+    second: TilesetPokemonAssets_440
+  - first:
+      213: -4231993418889990660
+    second: TilesetPokemonAssets_441
+  - first:
+      213: 3427526987326446900
+    second: TilesetPokemonAssets_442
+  - first:
+      213: 3848847398233519287
+    second: TilesetPokemonAssets_443
+  - first:
+      213: 5219772147049039187
+    second: TilesetPokemonAssets_444
+  - first:
+      213: -1749468054455411672
+    second: TilesetPokemonAssets_445
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 675
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c7376ee5ab8b4a0800000000000000
+      internalID: -6577302339018589071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 678
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61764c4c3626d0860800000000000000
+      internalID: 7497757135284234006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_2
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 675
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daed182a4a64a33c0800000000000000
+      internalID: -4379110014749385043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_3
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 675
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b37f3f77cb45700800000000000000
+      internalID: 528254279689386878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_4
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 678
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6329009b851d0a320800000000000000
+      internalID: 2567281966592332342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_5
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 675
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f8fc49a904827a0800000000000000
+      internalID: -6401795837641388155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_6
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 675
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3043ac1b3f17f1e30800000000000000
+      internalID: 4476421846103372803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_7
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 678
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77dd33f206d69e130800000000000000
+      internalID: 3596526037308267895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_8
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 675
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e7294be391709d0800000000000000
+      internalID: -2808248085534048631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_9
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 675
+        width: 63
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0fa723810fa77e0800000000000000
+      internalID: -1766835917072699167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_10
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 678
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b318097fef389a420800000000000000
+      internalID: 2641787787527881019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_11
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 675
+        width: 63
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea0657a0f1d2f9a0800000000000000
+      internalID: -6200662905405961493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 582
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de600bb4fab094020800000000000000
+      internalID: 2326403530030581485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_13
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 582
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f9dbd37a0f24460800000000000000
+      internalID: 7224601353341738792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_14
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 582
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77675f31bca602fb0800000000000000
+      internalID: -4674618992764815753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_15
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 579
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddf03190a3364cf0800000000000000
+      internalID: -268470363058274857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_16
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 582
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ce0feb8190c55c0800000000000000
+      internalID: -4225492348493042599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_17
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 579
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c423388361b3450800000000000000
+      internalID: 6069469354786966635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_18
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 579
+        width: 51
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88bcd372ca4fbf60800000000000000
+      internalID: 8052236857789692043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_19
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 582
+        width: 51
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0399335534ddeeb0800000000000000
+      internalID: -4688858311528180978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_20
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 579
+        width: 51
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481a0a26adf498aa0800000000000000
+      internalID: -6158303216076283516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_21
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 579
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0105c07f696d9c030800000000000000
+      internalID: 3515576928017600528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_22
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 582
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3431caf2cdee0290800000000000000
+      internalID: -7922133272811719617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_23
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 579
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f52b970ae9561af0800000000000000
+      internalID: -426054253055105546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_24
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 486
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a6efd6163cb5c20800000000000000
+      internalID: 3196363183774132787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_25
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 486
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22edf8c89d04883a0800000000000000
+      internalID: -6663004345584329182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_26
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 486
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f183d6b835007b70800000000000000
+      internalID: 8894615005200351728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_27
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 483
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4f9da59b91c8480800000000000000
+      internalID: -8895706880079694654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_28
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 486
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a7d81700a2a6ad0800000000000000
+      internalID: -2708306044516468097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_29
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 483
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869204f6352e34bf0800000000000000
+      internalID: -341180298773386904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_30
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 483
+        width: 51
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda78f1976324fe40800000000000000
+      internalID: 5689211157013363423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_31
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 486
+        width: 51
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f73ae58742a5de0800000000000000
+      internalID: -1343721439414223039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_32
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 483
+        width: 51
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf1cddb20a5a3790800000000000000
+      internalID: -7549622857511460925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_33
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 483
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c4e953f55ff2f60800000000000000
+      internalID: 8011892051385666637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_34
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 486
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da570491401189650800000000000000
+      internalID: 6239755993023018413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_35
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 483
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ea599626c2f78e0800000000000000
+      internalID: -1693586133678182866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_36
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 390
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25afb86de9d55720800000000000000
+      internalID: 2834411154187461935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_37
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 393
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4dc39f39cc75fa90800000000000000
+      internalID: -7280776018777617077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_38
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 390
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb1e8d688bd0e370800000000000000
+      internalID: 8349915088144964552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_39
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 387
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcda5621f2a623470800000000000000
+      internalID: 8372871407639834059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_40
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 390
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5255056e81b44e0800000000000000
+      internalID: -1996474632339380805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_41
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 387
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738b7e0e327c00bc0800000000000000
+      internalID: -3818833527099115465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_42
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 387
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f67547e812b59a10800000000000000
+      internalID: 1915633036545062642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_43
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 390
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd5d62201f2b9000800000000000000
+      internalID: 43680367733726671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_44
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 387
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece312c3a5a743e90800000000000000
+      internalID: -7046872988953526578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_45
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 387
+        width: 63
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30eef73073c558290800000000000000
+      internalID: -7888797780917883389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_46
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 390
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b758226bcbb8550800000000000000
+      internalID: 6164228005435898635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_47
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 387
+        width: 63
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2ee0374f08508e0800000000000000
+      internalID: -1727833094635986194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_48
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 291
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52491e9a66a82b410800000000000000
+      internalID: 1491406600154485797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_49
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 294
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d46ed9c89a934970800000000000000
+      internalID: 8737997683041395928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_50
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 291
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38762ad7bf666dc70800000000000000
+      internalID: 8995490536049764227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_51
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 309
+        width: 51
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9961bba00808130800000000000000
+      internalID: 3566991688454281682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_52
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 312
+        width: 51
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a8b8ff48afd1be0800000000000000
+      internalID: -1504771251341915582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_53
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 309
+        width: 51
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06510016fadcb5c30800000000000000
+      internalID: 4349296018286712160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_54
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 312
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92c0ed8c57ba2ba0800000000000000
+      internalID: -6112871936056835427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_55
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 321
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ffad025835b74ba0800000000000000
+      internalID: -6104711516377993227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_56
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 315
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ab7aa9339bfa060800000000000000
+      internalID: 6966990779854600847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_57
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 291
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb13159afe0bd9db0800000000000000
+      internalID: -4783472685813255745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_58
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 294
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f189cce6cfe7ed50800000000000000
+      internalID: 6766640602802651641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_59
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 291
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f50877dd7d41e420800000000000000
+      internalID: 2657490458006521334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195
+        width: 216
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c362734a4c5170840800000000000000
+      internalID: 5190141029880636988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_61
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 219
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b82b2ac966b1640800000000000000
+      internalID: 5051744229956684655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_62
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 216
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a949789dbe372ea90800000000000000
+      internalID: -7286133790327991142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_63
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 219
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55de6a273ddee31c0800000000000000
+      internalID: -4521915483415974571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_64
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 216
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a526e559cfb0a7830800000000000000
+      internalID: 4069578392748319322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_65
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 219
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d463c792fa30490800000000000000
+      internalID: -7781183138453631661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_66
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 216
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66cdb7647e2639e70800000000000000
+      internalID: 9120742415814876262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_67
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 195
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373d5ac00def2def0800000000000000
+      internalID: -84725273447771277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_68
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 198
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23afdbdbc1ae4e30800000000000000
+      internalID: 4489703775474262828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_69
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 195
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21abc9ca4c4f1a5d0800000000000000
+      internalID: -3052889946833765870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 99
+        width: 216
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98402cb0ce81276e0800000000000000
+      internalID: -1841381895552498551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_71
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 123
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662827e47cb717740800000000000000
+      internalID: 5148031945006023270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_72
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 120
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b017de5a9d0bb4f0800000000000000
+      internalID: -812040351142965070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_73
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 123
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5e4d2bd719a43b0800000000000000
+      internalID: -5527445623586626128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_74
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 120
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129d17e8148802310800000000000000
+      internalID: 1378251301119449377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_75
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 123
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad5196dd80a74270800000000000000
+      internalID: 8234726974720925090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_76
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 120
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691045b44696586c0800000000000000
+      internalID: -4141788402815860330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_77
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 102
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4c798e23a087bc0800000000000000
+      internalID: -3785264273037998929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_78
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 102
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24ebaf687025ff20800000000000000
+      internalID: 3455703990718424111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_79
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 102
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303b4d26a452adbd0800000000000000
+      internalID: -2604728433064496381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_80
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 3
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2b21c2720b10fa0800000000000000
+      internalID: -5836189959805816129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_81
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 6
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e604c73b2b3c910800000000000000
+      internalID: 1856523955360263716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_82
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 3
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8787112d6f98f6200800000000000000
+      internalID: 175510603670059128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_83
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 33
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a498c96b478785d80800000000000000
+      internalID: -8261721073735923382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_84
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 33
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1102561631a5dd990800000000000000
+      internalID: -7359627176768626671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_85
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 33
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795141b6b06e695d0800000000000000
+      internalID: -3056002360408795753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_86
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 30
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547d12ee55faef180800000000000000
+      internalID: -9079627015130065083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_87
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 33
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ed646dff43a57d0800000000000000
+      internalID: -2928970334234812893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_88
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 30
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44385ad8e68b1b810800000000000000
+      internalID: 1779406112750404420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_89
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 0
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa14a84469844250800000000000000
+      internalID: 5928014073334864635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_90
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 6
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ca3bea05605bad0800000000000000
+      internalID: -2687234659058471815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilesetPokemonAssets_91
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57157ec5cff905350800000000000000
+      internalID: 6003474209524109685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
