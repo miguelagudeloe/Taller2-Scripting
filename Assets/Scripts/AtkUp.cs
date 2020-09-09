@@ -7,6 +7,7 @@ using UnityEngine;
 class AtkUp : SupportSkill
 {
     [SerializeField] float debuf = 20;
+    public float Debuf { get => debuf; }
 
     public override void Use(Critter critter)
     {

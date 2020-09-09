@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d2b9d41753193e4e966c18acc416360, type: 3}
   m_Name: AtkUpSkill
   m_EditorClassIdentifier: 
-  nombre: 
+  nombre: Juan
   affinity: 0
   power: 0
   debuf: 20
