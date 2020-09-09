@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Referee : MonoBehaviour
 {
-    Player player1;
-    Player player2;
-
     public static Referee Instance { get; private set; }
 
     private void Awake()
@@ -14,10 +11,6 @@ public class Referee : MonoBehaviour
         if (Instance != null)
             Destroy(this);
         Instance = this;
-
-        var players = FindObjectsOfType<Player>();
-        player1 = players[0];
-        player2 = players[1];
     }
 
     void Update()

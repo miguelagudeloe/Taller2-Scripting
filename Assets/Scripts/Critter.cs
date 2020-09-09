@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Critter", menuName = "Critter")]
-public class Critter : ScriptableObject
+[Serializable]
+public class Critter
 {
     // Atributos
     [SerializeField] private string name;
@@ -14,8 +14,8 @@ public class Critter : ScriptableObject
     [SerializeField] private float baseDefense;
     [SerializeField] private float baseSpeed;
     [SerializeField] private Affinity.AffinityType affinity;
-    [SerializeField] private Skill[] moveSet;
     [SerializeField] private float hp;
+    [SerializeField] private Skill[] moveSet;
 
 
     private float attackBoost;
