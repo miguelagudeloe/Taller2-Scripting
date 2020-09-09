@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "new skill", menuName = "SpdDownSkill")]
+[CreateAssetMenu(fileName = "new skill", menuName = "Skills/SpdDownSkill")]
 class SpdDwn : SupportSkill
 {
     [SerializeField] float debuf = 30;

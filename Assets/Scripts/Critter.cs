@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-[Serializable] 
-class Critter
+[CreateAssetMenu(fileName = "New Critter", menuName = "Critter")]
+public class Critter : ScriptableObject
 {
     // Atributos
     [SerializeField] private string name;
@@ -32,14 +32,12 @@ class Critter
     };
 
 
-    public Critter(string name, float baseAttack, float baseDefense, float baseSpeed, Affinity.AffinityType affinity, Skill[] moveSet, float hp)
+    void Start()
     {
         // A estos no les hacemos excepción porque podemos clampearlos
-        this.name = name;
-        this.baseAttack = Mathf.Clamp(baseAttack, 10, 100);
-        this.baseDefense = Mathf.Clamp(baseDefense, 10, 100);
-        this.baseSpeed = Mathf.Clamp(baseSpeed, 1, 50);
-        this.affinity = affinity;
+        baseAttack = Mathf.Clamp(baseAttack, 10, 100);
+        baseDefense = Mathf.Clamp(baseDefense, 10, 100);
+        baseSpeed = Mathf.Clamp(baseSpeed, 1, 50);
 
         //Ver que las skills sean entre 1 y 3 y sean únicas
         if (moveSet.Length < 1)
@@ -50,8 +48,6 @@ class Critter
         {
             if (!IsUnique(moveSet))
                 throw new Exception("No son Skills diferentes");
-
-            this.moveSet = moveSet;
         }
         else
         {
@@ -63,10 +59,10 @@ class Critter
             if (!IsUnique(skillsTemp))
                 throw new Exception("No son Skills diferentes, además son más de 3");
 
-            this.moveSet = skillsTemp;
+            moveSet = skillsTemp;
         }
 
-        this.hp = (hp > 0) ? hp : 1;
+        hp = (hp > 0) ? hp : 1;
 
         ResetBoost();
     }
@@ -132,7 +128,9 @@ class Critter
     }
 
     public string Name { get => name; }
+    public float BaseAttack { get => baseAttack; }
     public float AttackValue { get => baseAttack * attackBoost; }
+    public float BaseDefense { get => baseDefense; }
     public float DefenseValue { get => baseDefense * defenseBoost; }
     public float BaseSpeed { get => baseSpeed; }
     public float SpeedValue { get => baseSpeed * speedBoost; }

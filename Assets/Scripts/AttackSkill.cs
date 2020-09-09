@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "new skill", menuName = "AttackSkill")]
-class AttackSkill : Skill
+[CreateAssetMenu(fileName = "new skill", menuName = "Skills/AttackSkill")]
+public class AttackSkill : Skill
 {
     [SerializeField]
     private float power;
