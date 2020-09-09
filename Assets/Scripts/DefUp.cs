@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "new skill", menuName = "DefUpSkill")]
+[CreateAssetMenu(fileName = "new skill", menuName = "Skills/DefUpSkill")]
 class DefUp : SupportSkill
 {
     [SerializeField] float debuf = 20;
