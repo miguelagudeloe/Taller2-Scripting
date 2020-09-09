@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-
-class Player : MonoBehaviour
+public class Player : MonoBehaviour
 {
     [SerializeField] private Critter[] critters;
 
@@ -61,6 +60,6 @@ class Player : MonoBehaviour
     }
 
 
-    internal Critter[] Critters { get => critters; }
+    public Critter[] Critters { get => critters; }
 }
 

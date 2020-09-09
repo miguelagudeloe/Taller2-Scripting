@@ -461,7 +461,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   critters:
-  - {fileID: 0}
+  - name: 
+    baseAttack: 0
+    baseDefense: 0
+    baseSpeed: 0
+    affinity: 0
+    hp: 0
+    moveSet: []
 --- !u!4 &346092736
 Transform:
   m_ObjectHideFlags: 0
@@ -670,7 +676,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   critters:
-  - {fileID: 11400000, guid: c89b9efd03caafe4a9ced4b363317da3, type: 2}
+  - name: 
+    baseAttack: 0
+    baseDefense: 0
+    baseSpeed: 0
+    affinity: 0
+    hp: 0
+    moveSet:
+    - {fileID: 11400000, guid: 1b4fb5da11b51af41a3e7ef957e4e455, type: 2}
 --- !u!4 &515288940
 Transform:
   m_ObjectHideFlags: 0
