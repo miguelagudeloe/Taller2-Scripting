@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-    [CreateAssetMenu(fileName = "new skill", menuName = "DefUpSkill")]
-    class DefUp : SupportSkill
-    {
-        
-        public override void Use(Critter critter)
-        {
-            critter.BoostDefense(20);
-        }
-    }
+[CreateAssetMenu(fileName = "new skill", menuName = "DefUpSkill")]
+class DefUp : SupportSkill
+{
+    [SerializeField] float debuf = 20;
 
+    public override void Use(Critter critter)
+    {
+        critter.BoostDefense(debuf);
+    }
+}

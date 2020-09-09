@@ -5,24 +5,17 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-
-[Serializable] class Critter
+[Serializable] 
+class Critter
 {
     // Atributos
-    [SerializeField]
-    private string name;
-    [SerializeField]
-    private float baseAttack;
-    [SerializeField]
-    private float baseDefense;
-    [SerializeField]
-    private float baseSpeed;
-    [SerializeField]
-    private Affinity.AffinityType affinity;
-    [SerializeField]
-    private Skill[] moveSet;
-    [SerializeField]
-    private float hp;
+    [SerializeField] private string name;
+    [SerializeField] private float baseAttack;
+    [SerializeField] private float baseDefense;
+    [SerializeField] private float baseSpeed;
+    [SerializeField] private Affinity.AffinityType affinity;
+    [SerializeField] private Skill[] moveSet;
+    [SerializeField] private float hp;
 
 
     private float attackBoost;
