@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8771a3dc0d49ab41af1df9479098209, type: 3}
   m_Name: DefUpSkill
   m_EditorClassIdentifier: 
-  nombre: 
+  nombre: rosamelano
   affinity: 0
   power: 0
   debuf: 20

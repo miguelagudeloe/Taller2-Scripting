@@ -7,6 +7,7 @@ using UnityEngine;
 class SpdDwn : SupportSkill
 {
     [SerializeField] float debuf = 30;
+    public float Debuf { get => debuf; }
 
     public override void Use(Critter critter)
     {

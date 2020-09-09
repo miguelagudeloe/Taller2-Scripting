@@ -6,17 +6,20 @@ using System.Text;
 using UnityEngine;
 
 [Serializable]
-public class Critter
+public class Critter 
 {
     // Atributos
     [SerializeField] private string name;
     [SerializeField] private float baseAttack;
     [SerializeField] private float baseDefense;
     [SerializeField] private float baseSpeed;
-    [SerializeField] private Affinity.AffinityType affinity;
-    [SerializeField] private float hp;
+    [SerializeField] private float maxHP;
+    [SerializeField]
+    private float hp;
+    [SerializeField] private Affinity.AffinityType affinity;    
     [SerializeField] private Skill[] moveSet;
 
+    
 
     private float attackBoost;
     private float defenseBoost;
@@ -32,8 +35,10 @@ public class Critter
     };
 
 
-    void Start()
+    public void Start()
     {
+        hp = maxHP;
+
         // A estos no les hacemos excepción porque podemos clampearlos
         baseAttack = Mathf.Clamp(baseAttack, 10, 100);
         baseDefense = Mathf.Clamp(baseDefense, 10, 100);
@@ -137,6 +142,7 @@ public class Critter
     internal Affinity.AffinityType AffinityCritter { get => affinity; }
     internal Skill[] MoveSet { get => moveSet; }
     public float Hp { get => hp; }
+    public float MaxHP { get => maxHP; }
     public bool IsDead { get => isDead; }
 }
 

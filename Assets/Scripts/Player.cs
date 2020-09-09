@@ -30,6 +30,11 @@ public class Player : MonoBehaviour
             if (!IsUnique(crittersTemp))
                 throw new Exception("No son Critters diferentes, además son más de 3");
         }
+
+        foreach (Critter critter in critters)
+        {
+            critter.Start();
+        }
     }
 
     private bool IsUnique(Critter[] critters)
