@@ -5,22 +5,22 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-[Serializable]
-public class Critter
+public class Critter : MonoBehaviour
 {
     // Atributos
     [SerializeField] private string name;
+    // [SerializeField] private GameObject prefab;
     [SerializeField] private float baseAttack;
     [SerializeField] private float baseDefense;
     [SerializeField] private float baseSpeed;
     [SerializeField] private float maxHP;
-    [SerializeField]
-    private float hp;
+    [SerializeField] private float hp;
     [SerializeField] private Affinity.AffinityType affinity;
     [Expandable]
     [SerializeField] private Skill[] moveSet;
 
-
+    public delegate void CritterEvent(Critter sender);
+    public static event CritterEvent OnDamageTake;
 
     private float attackBoost;
     private float defenseBoost;
@@ -36,7 +36,7 @@ public class Critter
     };
 
 
-    public void Start()
+    public void Init()
     {
         hp = maxHP;
 
@@ -126,6 +126,8 @@ public class Critter
         hp -= damage;
         hp = Mathf.Clamp(hp, 0, maxHP);
         isDead = (hp <= 0);
+
+        OnDamageTake?.Invoke(this);
     }
 
     public override string ToString()
@@ -134,6 +136,7 @@ public class Critter
     }
 
     public string Name { get => name; }
+    // public GameObject Prefab { get => prefab; }
     public float BaseAttack { get => baseAttack; }
     public float AttackValue { get => baseAttack * attackBoost; }
     public float BaseDefense { get => baseDefense; }

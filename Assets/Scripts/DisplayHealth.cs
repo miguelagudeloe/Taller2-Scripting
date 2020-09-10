@@ -5,29 +5,25 @@ using UnityEngine.UI;
 
 public class DisplayHealth : MonoBehaviour
 {
-    [SerializeField]
-    private Slider sliderPlayer;
-    [SerializeField]
-    private Slider sliderAI;
+    [SerializeField] private Slider sliderPlayer;
+    [SerializeField] private Slider sliderAI;
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void OnEnable()
     {
-        
+        Critter.OnDamageTake += Refresh;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
+        Critter.OnDamageTake -= Refresh;
+    }
 
-        sliderPlayer.maxValue = Referee.Instance.Critter1.MaxHP;
-        sliderAI.maxValue = Referee.Instance.Critter2.MaxHP;
+    void Refresh(Critter sender)
+    {
+        sliderPlayer.maxValue = Referee.Instance.CritterPlayer.MaxHP;
+        sliderAI.maxValue = Referee.Instance.CritterEnemy.MaxHP;
 
-        sliderPlayer.value = Referee.Instance.Critter1.Hp;
-        sliderAI.value = Referee.Instance.Critter2.Hp;
-
-            
-
+        sliderPlayer.value = Referee.Instance.CritterPlayer.Hp;
+        sliderAI.value = Referee.Instance.CritterEnemy.Hp;
     }
 }
