@@ -5,39 +5,24 @@ using TMPro;
 
 public class DisplaySkills : MonoBehaviour
 {
-    [SerializeField]
-    private TMP_Dropdown dropwdonSkill;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private TMP_Dropdown dropwdonSkill;
 
     private void OnEnable()
     {
-        Referee.onplayer1Turn += showDisplay;
-
-        Referee.onplayer2Turn += hideDisplay;
-
+        Referee.OnPlayer1Turn += showDisplay;
+        Referee.OnPlayer2Turn += hideDisplay;
     }
 
     private void OnDisable()
     {
-
-        Referee.onplayer1Turn -= hideDisplay;
-
-        Referee.onplayer2Turn -= showDisplay;
+        Referee.OnPlayer1Turn -= hideDisplay;
+        Referee.OnPlayer2Turn -= showDisplay;
     }
 
     private void showDisplay()
     {
+        dropwdonSkill.gameObject.SetActive(true);
+
         List<string> skillList = new List<string>();
         foreach (Skill skill in Referee.Instance.Critter1.MoveSet)
         {
@@ -49,5 +34,7 @@ public class DisplaySkills : MonoBehaviour
     private void hideDisplay()
     {
         dropwdonSkill.ClearOptions();
+
+        dropwdonSkill.gameObject.SetActive(false);
     }
 }
