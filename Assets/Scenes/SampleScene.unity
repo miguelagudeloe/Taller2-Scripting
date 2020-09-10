@@ -560,7 +560,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &106855361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1340,15 +1340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   critters:
-  - name: 
-    baseAttack: 0
-    baseDefense: 0
-    baseSpeed: 45
-    maxHP: 50
-    hp: 0
-    affinity: 0
-    moveSet:
-    - {fileID: 11400000, guid: fa9e2e9a00bb4c842924f45d2f62b050, type: 2}
+  - {fileID: 0}
 --- !u!4 &346092736
 Transform:
   m_ObjectHideFlags: 0
@@ -1950,17 +1942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   critters:
-  - name: Alma Marcela Gozo
-    baseAttack: 0
-    baseDefense: 0
-    baseSpeed: 50
-    maxHP: 100
-    hp: 0
-    affinity: 0
-    moveSet:
-    - {fileID: 11400000, guid: 1b4fb5da11b51af41a3e7ef957e4e455, type: 2}
-    - {fileID: 11400000, guid: fa9e2e9a00bb4c842924f45d2f62b050, type: 2}
-    - {fileID: 11400000, guid: ab872c2e4e75d704ca46064f26359ad7, type: 2}
+  - {fileID: 5416058465163570187, guid: 842ee6607a88853429c7e518a61c4a25, type: 3}
 --- !u!4 &515288940
 Transform:
   m_ObjectHideFlags: 0
@@ -3146,7 +3128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1243925424
 MonoBehaviour:
   m_ObjectHideFlags: 0

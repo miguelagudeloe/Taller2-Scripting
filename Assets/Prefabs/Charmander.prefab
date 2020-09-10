@@ -110,6 +110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 751293085635216774}
+  - component: {fileID: 5773333090915585930}
   m_Layer: 0
   m_Name: Charmander
   m_TagString: Untagged
@@ -132,3 +133,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5773333090915585930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7448905137546049330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 838eab201d515ee4d9e4000e96aebdaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  baseAttack: 0
+  baseDefense: 0
+  baseSpeed: 0
+  maxHP: 0
+  hp: 0
+  affinity: 0
+  moveSet: []

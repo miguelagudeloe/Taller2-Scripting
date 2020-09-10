@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [Expandable]
     [SerializeField] private Critter[] critters;
 
     private void Start()
@@ -32,9 +33,8 @@ public class Player : MonoBehaviour
         }
 
         foreach (Critter critter in critters)
-        {
-            critter.Start();
-        }
+            critter.Init();
+
     }
 
     private bool IsUnique(Critter[] critters)
