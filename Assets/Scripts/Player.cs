@@ -7,37 +7,43 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [Expandable]
-    [SerializeField] private Critter[] critters;
+    [SerializeField] private List<Critter> aliveCritters = new List<Critter>();
+    [Expandable]
+    [SerializeField] private List<Critter> deadCritters = new List<Critter>();
 
     private void Start()
     {
+        foreach (Critter critter in aliveCritters)
+            critter.Init();
+
+        RemoveDead();
+
         //Ver que las skills sean entre 1 y 3 y sean únicas
-        if (critters.Length < 1)
+        if (aliveCritters.Count < 1)
         {
             throw new Exception("Debe de tener almenos 1 Critter");
         }
-        else if (critters.Length <= 3)
+        else if (aliveCritters.Count <= 3)
         {
-            if (!IsUnique(critters))
+            if (!IsUnique(aliveCritters))
                 throw new Exception("No son Critters diferentes");
         }
         else
         {
-            Critter[] crittersTemp = new Critter[3];
+            List<Critter> crittersTemp = new List<Critter>();
 
             for (int i = 0; i < 3; i++)
-                crittersTemp[i] = critters[i];
+                crittersTemp.Add(aliveCritters[i]);
 
             if (!IsUnique(crittersTemp))
                 throw new Exception("No son Critters diferentes, además son más de 3");
         }
 
-        foreach (Critter critter in critters)
-            critter.Init();
+        
 
     }
 
-    private bool IsUnique(Critter[] critters)
+    private bool IsUnique(List<Critter> critters)
     {
         foreach (Critter critter in critters)
             if (critters.Count(c => c == critter) > 1)
@@ -47,24 +53,47 @@ public class Player : MonoBehaviour
 
     public void AddCritter(Critter critter)
     {
-        List<Critter> listTemp = critters.ToList();
-        listTemp.Add(critter);
-        critters = listTemp.ToArray();
+        if (critter.IsDead)
+            deadCritters.Add(critter);
+        else
+            aliveCritters.Add(critter);
+        
     }
 
     public void RemoveCritter(Critter critter)
     {
-        for (int i = 0; i < critters.Length; i++)
+        foreach (Critter critter_ in aliveCritters)
         {
-            if (critter == critters[i])
+
+            if (critter_ == critter)
             {
-                critters[i] = null;
+                aliveCritters.Remove(critter);
+                deadCritters.Add(critter);
                 break;
             }
         }
+            
+    }
+
+    public void RemoveDead()
+    {
+        foreach (Critter critter_ in aliveCritters)
+        {
+
+            if (critter_.IsDead)
+            {
+                aliveCritters.Remove(critter_);
+                deadCritters.Add(critter_);
+               
+            }
+        }
+
     }
 
 
-    public Critter[] Critters { get => critters; }
+    public List<Critter> AliveCritters { get => aliveCritters; }
+
+    public List<Critter> DeadCritters { get => aliveCritters; }
+
 }
 
