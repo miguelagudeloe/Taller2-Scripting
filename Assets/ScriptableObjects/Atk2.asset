@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47c731e46fa7e3140a68f6a022c53461, type: 3}
-  m_Name: AttackSkill
+  m_Name: Atk2
   m_EditorClassIdentifier: 
-  nombre: ju
+  nombre: Miguel
   affinity: 3
-  power: 5
+  power: 10
