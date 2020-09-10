@@ -5,34 +5,42 @@ using UnityEngine;
 public class Referee : MonoBehaviour
 {
     [SerializeField]
-    Player player1;
+    Player player;
     [SerializeField]
-    Player player2;
+    Player enemy;
 
-    Critter currentCritter;
+    Critter attackerCritter;
+    Critter defenderCritter;
     Player currentPlayer;
 
-    Critter critter1;
-    Critter critter2;
+    Critter critterPlayer;
+    Critter critterEnemy;
 
-    public static event refereeEvent OnPlayer1Turn;
-    public static event refereeEvent OnPlayer2Turn;
+    public static event refereeEvent OnPlayerTurn;
+    public static event refereeEvent OnEnemyTurn;
     public delegate void refereeEvent();
 
     int turn;
     public static Referee Instance { get; private set; }
 
-    public Critter Critter1 { get => critter1; }
-    public Critter Critter2 { get => critter2; }
+    public Critter Critter1 { get => critterPlayer; }
+    public Critter Critter2 { get => critterEnemy; }
 
+    private void OnEnable()
+    {
+        DisplaySkills.OnSelected += Attack;
+    }
+
+    private void OnDisable()
+    {
+        DisplaySkills.OnSelected -= Attack;
+    }
 
     private void Start()
     {
         turn = 0;
-        critter1 = player1.Critters[0];
-        critter2 = player2.Critters[0];
-
-
+        critterPlayer = player.Critters[0];
+        critterEnemy = enemy.Critters[0];
     }
 
     private void Awake()
@@ -49,12 +57,16 @@ public class Referee : MonoBehaviour
         {
             NextTurn();
 
-            if (currentPlayer == player1)
-                OnPlayer1Turn?.Invoke();
+            if (currentPlayer == player)
+                OnPlayerTurn?.Invoke();
             else
-                OnPlayer2Turn?.Invoke();
+                OnEnemyTurn?.Invoke();
         }
 
+    }
+
+    private void Attack(Skill skill)
+    {
 
     }
 
@@ -64,45 +76,52 @@ public class Referee : MonoBehaviour
         playerTake.RemoveCritter(critter);
     }
 
-
-    public Critter NextTurn()
+    public void NextTurn()
     {
         turn++;
         if (turn == 1)
         {
-            if (critter1.BaseSpeed > critter2.BaseSpeed)
+            if (critterPlayer.BaseSpeed > critterEnemy.BaseSpeed)
             {
-                currentPlayer = player1;
-                return critter1;
+                currentPlayer = player;
+                attackerCritter = critterPlayer;
+                defenderCritter = critterEnemy;
+                return;
             }
             else
             {
-                currentPlayer = player2;
-                return critter2;
+                currentPlayer = enemy;
+                attackerCritter = critterPlayer;
+                defenderCritter = critterEnemy;
+                return;
             }
         }
 
-        if (currentPlayer == player2)
+        if (currentPlayer == enemy)
         {
-            foreach (Critter critter in player1.Critters)
+            foreach (Critter critter in player.Critters)
                 if (critter.IsDead == false)
                 {
-                    currentPlayer = player1;
-                    return critter;
+                    currentPlayer = player;
+                    attackerCritter = critterPlayer;
+                    defenderCritter = critterEnemy;
+                    return;
                 }
 
-            return null;
+            return;
         }
         else
         {
-            foreach (Critter critter in player2.Critters)
+            foreach (Critter critter in enemy.Critters)
                 if (critter.IsDead == false)
                 {
-                    currentPlayer = player2;
-                    return critter;
+                    currentPlayer = enemy;
+                    attackerCritter = critterPlayer;
+                    defenderCritter = critterEnemy;
+                    return;
                 }
 
-            return null;
+            return;
         }
     }
 }
