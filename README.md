@@ -17,7 +17,8 @@ UI Assets by Fast Solutions channel on youtube: https://www.youtube.com/watch?v=
 ### ScriptableObject/MonoBehaviour property drawer
 
 Se probaron las diferentes soluciones que se proponían en este foro, hasta que se halló la opción que más se acomodaba a las necesidades.
-Esto se hizo porque decidimos hacer las skills como ScriptableObjects, puesto que las skills se dividen en 2 tipos: ataque y defensa, y cada una de estas habilidades hace algo distinto. Esto es posible hacerlo con los ScriptableObjects, se puede escoger el tipo de habilidad, y se muestran sus parámetros gracias a la solución antes explicada.
-Escoger una skill específica y modificarle los parámetros no era posible hacerlo sin los ScriptableObjects, puesto que se podía serializar la clase skill y sus subclases, se podían serializar los parámetros en el inspector, pero no era posible escoger una clase de habilidad específica.
+Esto se hizo porque decidimos hacer las skills como ScriptableObjects, puesto que las skills se dividen en 2 tipos: ataque y defensa, y cada una de estas habilidades hace algo distinto. Esto es mejor hacerlo con los ScriptableObjects, ya que se puede escoger el tipo de habilidad, y se muestran sus parámetros gracias a la solución antes explicada.
+Escoger una skill específica y modificarle los parámetros no era posible hacerlo sin los ScriptableObjects o MonoBehaviout, puesto que se podía serializar la clase skill y sus subclases, se podían serializar los parámetros en el inspector, pero no era posible escoger una clase de habilidad específica.
+Para hacer esto último, se escogío ScriptableObjects sobre MonoBevahiour dado que no era necesario crear un prefab para una habilidad y no se necesitaba que la habilidad estuviera dentro de un GameObject, lo único que se requería era poder modificar sus atrubutos y acceder a sus métodos.
 
 https://forum.unity.com/threads/editor-tool-better-scriptableobject-inspector-editing.484393/
