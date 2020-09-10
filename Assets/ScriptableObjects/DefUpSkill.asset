@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DefUpSkill
   m_EditorClassIdentifier: 
   nombre: rosamelano
-  affinity: 0
+  affinity: 3
   power: 0
   debuf: 20

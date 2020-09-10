@@ -6,7 +6,7 @@ using System.Text;
 using UnityEngine;
 
 [Serializable]
-public class Critter 
+public class Critter
 {
     // Atributos
     [SerializeField] private string name;
@@ -16,10 +16,11 @@ public class Critter
     [SerializeField] private float maxHP;
     [SerializeField]
     private float hp;
-    [SerializeField] private Affinity.AffinityType affinity;    
+    [SerializeField] private Affinity.AffinityType affinity;
+    [Expandable]
     [SerializeField] private Skill[] moveSet;
 
-    
+
 
     private float attackBoost;
     private float defenseBoost;
