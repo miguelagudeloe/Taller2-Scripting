@@ -124,7 +124,7 @@ public class Critter
     public void TakeDamage(float damage)
     {
         hp -= damage;
-
+        hp = Mathf.Clamp(hp, 0, maxHP);
         isDead = (hp <= 0);
     }
 
