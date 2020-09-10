@@ -26,6 +26,9 @@ public class Referee : MonoBehaviour
     public Critter CritterPlayer { get => critterPlayer; }
     public Critter CritterEnemy { get => critterEnemy; }
 
+    public Player Player { get => player; }
+    public Player Enemy { get => enemy; }
+
     private void OnEnable()
     {
         DisplaySkills.OnAttackSelected += Attack;
@@ -47,8 +50,8 @@ public class Referee : MonoBehaviour
 
     private void Start()
     {
-        critterPlayer = player.Critters[0];
-        critterEnemy = enemy.Critters[0];
+        critterPlayer = player.AliveCritters[0];
+        critterEnemy = enemy.AliveCritters[0];
         turn = 0;
     }
 
@@ -91,42 +94,42 @@ public class Referee : MonoBehaviour
         if (turn == 1)
         {
             if (critterPlayer.BaseSpeed >= critterEnemy.BaseSpeed)
-                AsignContesters(player, enemy, critterPlayer, critterEnemy);
+                AssignContesters(player, enemy, critterPlayer, critterEnemy);
             else
-                AsignContesters(enemy, player, critterEnemy, critterPlayer);
+                AssignContesters(enemy, player, critterEnemy, critterPlayer);
 
             return;
         }
 
         if (attackerPlayer == enemy)
         {
-            foreach (Critter critter in player.Critters)
-                if (critter.IsDead == false)
-                {
-                    AsignContesters(player, enemy, critterPlayer, critterEnemy);
-                    return;
-                }
+            if (player.AliveCritters.Count > 0)
+                AssignContesters(player, enemy, critterPlayer, critterEnemy);
 
-            // TODO: si llega aquí, es porque no tiene critters vivos, por ende, gana el otro jugador
+            else
+            {
+                // TODO: si llega aquí, es porque no tiene critters vivos, por ende, gana el otro jugador
 
-            return;
+            }
+
         }
         else
         {
-            foreach (Critter critter in enemy.Critters)
-                if (critter.IsDead == false)
-                {
-                    AsignContesters(enemy, player, critterEnemy, critterPlayer);
-                    return;
-                }
+            if (enemy.AliveCritters.Count > 0)
+                AssignContesters(enemy, player, critterEnemy, critterPlayer);
 
-            // TODO: si llega aquí, es porque no tiene critters vivos, por ende, gana el otro jugador
+            else
+            {
+                // TODO: si llega aquí, es porque no tiene critters vivos, por ende, gana el otro jugador
+            }
 
-            return;
         }
+
+            
+                     
     }
 
-    void AsignContesters(Player attackerPlayer, Player defenderPlayer, Critter attackerCritter, Critter defenderCritter)
+    void AssignContesters(Player attackerPlayer, Player defenderPlayer, Critter attackerCritter, Critter defenderCritter)
     {
         this.attackerPlayer = attackerPlayer;
         this.defenderPlayer = defenderPlayer;

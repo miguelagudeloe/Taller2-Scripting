@@ -60,10 +60,18 @@ public class DisplaySkills : MonoBehaviour
         }
 
         dropdownAttackSkill.AddOptions(attackSkillList);
-        dropdownAttackSkill.Show();
+        if (attackSkillList.Count <= 1)
+            dropdownAttackSkill.gameObject.SetActive(false);
+        else
+            dropdownAttackSkill.Show();
+
+
 
         dropdownSupportSkill.AddOptions(supportSkillList);
-        dropdownSupportSkill.Show();
+        if (supportSkillList.Count <= 1)
+            dropdownSupportSkill.gameObject.SetActive(false);
+        else
+            dropdownSupportSkill.Show();
 
     }
 

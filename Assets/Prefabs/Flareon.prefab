@@ -44,12 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 838eab201d515ee4d9e4000e96aebdaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Flareon
-  baseAttack: 0
-  baseDefense: 0
-  baseSpeed: 0
+  name: el muerto
+  baseAttack: 10
+  baseDefense: 10
+  baseSpeed: 1
   maxHP: 0
-  hp: 0
+  hp: 1
   affinity: 0
   moveSet:
   - {fileID: 11400000, guid: 17e455296fe40664191dc9cceeacb475, type: 2}

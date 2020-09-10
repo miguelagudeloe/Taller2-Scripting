@@ -39,6 +39,7 @@ public class Critter : MonoBehaviour
     public void Init()
     {
         hp = maxHP;
+        TakeDamage(0);
 
         // A estos no les hacemos excepción porque podemos clampearlos
         baseAttack = Mathf.Clamp(baseAttack, 10, 100);
