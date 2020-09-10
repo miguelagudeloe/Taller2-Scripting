@@ -5,12 +5,24 @@ using TMPro;
 
 public class DisplaySkills : MonoBehaviour
 {
-    [SerializeField] private TMP_Dropdown dropwdonSkill;
+    [SerializeField] private TMP_Dropdown dropdownAttackSkill;
+    [SerializeField] private TMP_Dropdown dropdownSupportSkill;
 
-    Dictionary<int, Skill> skills = new Dictionary<int, Skill>();
+    [SerializeField]
+    private List<string> attackSkillList = new List<string>();
+    [SerializeField]
+    private List<string> supportSkillList = new List<string>();
 
-    public delegate void DisplayEvent(Skill skill);
-    public static event DisplayEvent OnSelected;
+
+
+    Dictionary<int, AttackSkill> attackSkills = new Dictionary<int, AttackSkill>();
+    Dictionary<int, SupportSkill> supportSkills = new Dictionary<int, SupportSkill>();
+
+    public delegate void DisplayEvent(AttackSkill skill);
+    public static event DisplayEvent OnAttackSelected;
+
+    public delegate void DisplaySupportEvent(SupportSkill supportSkill);
+    public static event DisplaySupportEvent OnSupportSelected;
 
     private void OnEnable()
     {
@@ -26,31 +38,78 @@ public class DisplaySkills : MonoBehaviour
 
     private void showDisplay()
     {
-        dropwdonSkill.gameObject.SetActive(true);
+        dropdownAttackSkill.gameObject.SetActive(true);
+        dropdownSupportSkill.gameObject.SetActive(true);
 
-        List<string> skillList = new List<string>() { "None" };
-        foreach (Skill skill in Referee.Instance.Critter1.MoveSet)
-        {
-            skillList.Add(skill.name);
-        }
-        dropwdonSkill.AddOptions(skillList);
-        dropwdonSkill.Show();
+         attackSkillList = new List<string>() { "None" };
+         supportSkillList = new List<string>() { "None" };
 
-        for (int i = 1; i < dropwdonSkill.options.Count; i++)
+        int indexAttack = 1;
+        int indexSupport = 1;
+
+        for (int i = 0; i < Referee.Instance.Critter1.MoveSet.Length; i++)
         {
-            skills.Add(i, Referee.Instance.Critter1.MoveSet[i - 1]);
+
+            if (Referee.Instance.Critter1.MoveSet[i] is AttackSkill)
+            {
+                AttackSkill skill = Referee.Instance.Critter1.MoveSet[i] as AttackSkill;
+                attackSkillList.Add(skill.name);
+
+                attackSkills.Add(indexAttack++, skill);
+            }
+
+
+            else
+            {
+                SupportSkill skill = Referee.Instance.Critter1.MoveSet[i] as SupportSkill;
+                supportSkillList.Add(skill.name);
+                supportSkills.Add(indexSupport++, skill);
+            }
+                
+
         }
+                
+        dropdownAttackSkill.AddOptions(attackSkillList);
+        dropdownAttackSkill.Show();
+
+        dropdownSupportSkill.AddOptions(supportSkillList);
+        dropdownSupportSkill.Show();
+
+        
     }
 
     private void hideDisplay()
     {
-        dropwdonSkill.ClearOptions();
-        skills.Clear();
-        dropwdonSkill.gameObject.SetActive(false);
+        dropdownAttackSkill.ClearOptions();
+        attackSkills.Clear();        
+
+        dropdownSupportSkill.ClearOptions();
+        supportSkills.Clear();
+
+        dropdownAttackSkill.gameObject.SetActive(false);
+        dropdownSupportSkill.gameObject.SetActive(false);
     }
 
-    public void Select()
+    public void SelectAttackSkill()
     {
-        OnSelected?.Invoke(skills[dropwdonSkill.value]);
+        foreach (var item in attackSkills)
+        {
+            print(item);
+        }
+        
+        if(dropdownAttackSkill.value!=0)
+        OnAttackSelected?.Invoke(attackSkills[dropdownAttackSkill.value]);
+        hideDisplay();
+    }
+
+    public void SelectSupportSkill()
+    {
+        foreach (var item in supportSkills)
+        {
+            print(item);
+        }
+        if (dropdownSupportSkill.value!=0)
+          OnSupportSelected?.Invoke(supportSkills[dropdownSupportSkill.value]);
+          hideDisplay();
     }
 }

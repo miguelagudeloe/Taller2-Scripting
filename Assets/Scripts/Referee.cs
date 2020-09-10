@@ -28,12 +28,14 @@ public class Referee : MonoBehaviour
 
     private void OnEnable()
     {
-        DisplaySkills.OnSelected += Attack;
+        DisplaySkills.OnAttackSelected += Attack;
+        DisplaySkills.OnSupportSelected += Support;
     }
 
     private void OnDisable()
     {
-        DisplaySkills.OnSelected -= Attack;
+        DisplaySkills.OnAttackSelected -= Attack;
+        DisplaySkills.OnSupportSelected -= Support;
     }
 
     private void Start()
@@ -65,11 +67,17 @@ public class Referee : MonoBehaviour
 
     }
 
-    private void Attack(Skill skill)
+    private void Attack(AttackSkill atkskill)
     {
-
+        attackerCritter.Attack(atkskill, defenderCritter);
+        NextTurn();
     }
 
+    private void Support(SupportSkill supSkill)
+    {
+        supSkill.Use(attackerCritter);
+        NextTurn();
+    }
     private void ChangeCritters(Player playerTake, Player playerPut, Critter critter)
     {
         playerPut.AddCritter(critter);

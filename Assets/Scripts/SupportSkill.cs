@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-abstract class SupportSkill : Skill
+public abstract class SupportSkill : Skill
 {
     [SerializeField] private float power;
 
