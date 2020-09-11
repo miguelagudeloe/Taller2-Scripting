@@ -145,12 +145,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 838eab201d515ee4d9e4000e96aebdaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: el muerto
+  name: el vivo
   baseAttack: 10
   baseDefense: 10
   baseSpeed: 2
-  maxHP: 0
-  hp: 1
+  maxHP: 50
+  hp: 50
   affinity: 0
   moveSet:
+  - {fileID: 11400000, guid: fa9e2e9a00bb4c842924f45d2f62b050, type: 2}
+  - {fileID: 11400000, guid: 17e455296fe40664191dc9cceeacb475, type: 2}
   - {fileID: 11400000, guid: db7ef2df5ffd8fe4aa82d243846d363d, type: 2}

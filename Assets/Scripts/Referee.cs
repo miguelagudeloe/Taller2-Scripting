@@ -57,15 +57,7 @@ public class Referee : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            NextTurn();
-
-            if (attackerPlayer == player)
-                OnPlayerTurn?.Invoke();
-            else
-                OnEnemyTurn?.Invoke();
-        }
+        
     }
 
     private void Attack(AttackSkill attackSkill)
@@ -90,6 +82,7 @@ public class Referee : MonoBehaviour
 
     public void NextTurn()
     {
+
         turn++;
         if (turn == 1)
         {
@@ -98,35 +91,39 @@ public class Referee : MonoBehaviour
             else
                 AssignContesters(enemy, player, critterEnemy, critterPlayer);
 
-            return;
-        }
-
-        if (attackerPlayer == enemy)
-        {
-            if (player.AliveCritters.Count > 0)
-                AssignContesters(player, enemy, critterPlayer, critterEnemy);
-
-            else
-            {
-                // TODO: si llega aquí, es porque no tiene critters vivos, por ende, gana el otro jugador
-
-            }
 
         }
         else
         {
-            if (enemy.AliveCritters.Count > 0)
-                AssignContesters(enemy, player, critterEnemy, critterPlayer);
+
+            if (attackerPlayer == enemy)
+            {
+                if (player.AliveCritters.Count > 0)
+                    AssignContesters(player, enemy, critterPlayer, critterEnemy);
+
+                else
+                {
+                    // TODO: si llega aquí, es porque no tiene critters vivos, por ende, gana el otro jugador
+
+                }
+
+            }
+
 
             else
             {
-                // TODO: si llega aquí, es porque no tiene critters vivos, por ende, gana el otro jugador
+                if (enemy.AliveCritters.Count > 0)
+                    AssignContesters(enemy, player, critterEnemy, critterPlayer);
+
+                else
+                {
+                    // TODO: si llega aquí, es porque no tiene critters vivos, por ende, gana el otro jugador
+                }
+
             }
-
         }
+        Notificate();
 
-            
-                     
     }
 
     void AssignContesters(Player attackerPlayer, Player defenderPlayer, Critter attackerCritter, Critter defenderCritter)
@@ -135,5 +132,13 @@ public class Referee : MonoBehaviour
         this.defenderPlayer = defenderPlayer;
         this.attackerCritter = attackerCritter;
         this.defenderCritter = defenderCritter;
+    }
+
+    void Notificate()
+    {
+        if (attackerPlayer == player)
+            OnPlayerTurn?.Invoke();
+        else
+            OnEnemyTurn?.Invoke();
     }
 }
