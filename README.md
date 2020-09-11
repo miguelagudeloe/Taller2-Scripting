@@ -1,6 +1,8 @@
 # Taller2Scripting
  
- 
+## Integrantes
+### Miguel Ángel Agudelo 
+### Juan Esteban Ramírez
  
 ### Assets ThirdParty
 
