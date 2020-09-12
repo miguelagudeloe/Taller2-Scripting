@@ -68,10 +68,7 @@ public class Player : MonoBehaviour
             }
         } */
         if (aliveCritters.Count > 0)
-        {
             aliveCritters.RemoveAt(0);
-            deadCritters.Add(critter);
-        }
     }
 
     public void RemoveDead()
