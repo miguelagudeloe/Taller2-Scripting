@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Referee : MonoBehaviour
 {
     [SerializeField] Player player;
     [SerializeField] Player enemy;
+    [SerializeField] TextMeshProUGUI messageReferee;
 
     Critter attackerCritter;
     Critter defenderCritter;
@@ -48,6 +50,7 @@ public class Referee : MonoBehaviour
         critterPlayer = player.AliveCritters[0];
         critterEnemy = enemy.AliveCritters[0];
         turn = 0;
+        DisplayMessageTurn();
     }
 
     private void EndTurn()
@@ -124,6 +127,8 @@ public class Referee : MonoBehaviour
         }
 
         NotificateAttackTurn();
+
+        DisplayMessageTurn();
     }
 
     void Register()
@@ -166,5 +171,10 @@ public class Referee : MonoBehaviour
             else
                 OnEnemyCritterChange?.Invoke();
         }
+    }
+
+    void DisplayMessageTurn()
+    {
+        messageReferee.text = "Turno " + turn.ToString() + ", turno de " + attackerPlayer.name + ", con critter " + attackerCritter.name;
     }
 }
