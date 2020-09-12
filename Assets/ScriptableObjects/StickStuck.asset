@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baadef40b399fd9439233cc98e84affb, type: 3}
   m_Name: StickStuck
   m_EditorClassIdentifier: 
-  nombre: 
-  affinity: 0
-  power: 0
+  nombre: Stick Stuck
+  affinity: 2
+  power: 3
   debuf: 30

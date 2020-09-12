@@ -150,8 +150,9 @@ MonoBehaviour:
   baseDefense: 10
   baseSpeed: 10
   maxHP: 100
-  hp: 100
+  hp: 90
   affinity: 0
   moveSet:
-  - {fileID: 11400000, guid: ab872c2e4e75d704ca46064f26359ad7, type: 2}
-  - {fileID: 11400000, guid: fa9e2e9a00bb4c842924f45d2f62b050, type: 2}
+  - {fileID: 11400000, guid: 5d6f0addeb2996a4eb71907013013ee6, type: 2}
+  - {fileID: 11400000, guid: 8b3a7f4d1b4990847a5077dd3b3b3aeb, type: 2}
+  - {fileID: 11400000, guid: 6a2337b7efa745e4d81fd8f66ec7c074, type: 2}
