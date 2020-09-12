@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47c731e46fa7e3140a68f6a022c53461, type: 3}
-  m_Name: Atk2
+  m_Script: {fileID: 11500000, guid: 279e6f8cd0bc5944d80e277478cb197b, type: 3}
+  m_Name: Mug
   m_EditorClassIdentifier: 
-  nombre: Miguel
+  nombre: Mug
   affinity: 3
-  power: 10
+  power: 8
+  debuf: 10

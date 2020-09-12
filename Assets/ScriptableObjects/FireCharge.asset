@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8771a3dc0d49ab41af1df9479098209, type: 3}
-  m_Name: DefUpSkill
+  m_Script: {fileID: 11500000, guid: 5b5b0a8e0e6d0cf4f9854be70664c937, type: 3}
+  m_Name: FireCharge
   m_EditorClassIdentifier: 
-  nombre: rosamelano
-  affinity: 3
-  power: 0
-  debuf: 20
+  nombre: FireCharge
+  affinity: 0
+  power: 10

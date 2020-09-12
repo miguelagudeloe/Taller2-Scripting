@@ -49,10 +49,10 @@ MonoBehaviour:
   baseDefense: 10
   baseSpeed: 1
   maxHP: 0
-  hp: 1
+  hp: 0
   affinity: 0
   moveSet:
-  - {fileID: 11400000, guid: 17e455296fe40664191dc9cceeacb475, type: 2}
+  - {fileID: 11400000, guid: b71abcfe30109da4b8f7c4291b85ade2, type: 2}
 --- !u!1 &7199768181608195744
 GameObject:
   m_ObjectHideFlags: 0

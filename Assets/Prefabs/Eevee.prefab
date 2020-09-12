@@ -153,6 +153,5 @@ MonoBehaviour:
   hp: 50
   affinity: 0
   moveSet:
-  - {fileID: 11400000, guid: fa9e2e9a00bb4c842924f45d2f62b050, type: 2}
-  - {fileID: 11400000, guid: 17e455296fe40664191dc9cceeacb475, type: 2}
-  - {fileID: 11400000, guid: db7ef2df5ffd8fe4aa82d243846d363d, type: 2}
+  - {fileID: 11400000, guid: 5d6f0addeb2996a4eb71907013013ee6, type: 2}
+  - {fileID: 11400000, guid: 6a2337b7efa745e4d81fd8f66ec7c074, type: 2}
