@@ -36,7 +36,6 @@ public class Referee : MonoBehaviour
     public Critter CritterPlayer { get => critterPlayer; }
     public Critter CritterEnemy { get => critterEnemy; }
 
-
     private void Awake()
     {
         if (Instance != null)
@@ -69,7 +68,8 @@ public class Referee : MonoBehaviour
         else
         {
             defenderCritter = null;
-            // No hay mas critters vivos del defensor
+            Unregister();
+            print("End of match");
         }
 
         NotificateCritterChange();
@@ -92,6 +92,7 @@ public class Referee : MonoBehaviour
             else
                 AssignContesters(enemy, player, critterEnemy, critterPlayer);
 
+            Register();
             NotificateCritterChange();
         }
         else
@@ -119,6 +120,16 @@ public class Referee : MonoBehaviour
         }
 
         NotificateAttackTurn();
+    }
+
+    void Register()
+    {
+        PlayerController.OnEndAction += EndTurn;
+    }
+
+    void Unregister()
+    {
+        PlayerController.OnEndAction -= EndTurn;
     }
 
     void AssignContesters(Player attackerPlayer, Player defenderPlayer, Critter attackerCritter, Critter defenderCritter)

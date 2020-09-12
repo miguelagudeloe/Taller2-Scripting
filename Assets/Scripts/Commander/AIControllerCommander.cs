@@ -20,7 +20,10 @@ public class AIControllerCommander : BaseControllerCommander
         Skill skill = moves[ind];
 
         if (skill is AttackSkill)
-            mine.Attack(skill as AttackSkill, enemy);
+        {
+            float damage = mine.AttackDamage(skill as AttackSkill, enemy);
+            Referee.Instance.CritterPlayer.TakeDamage(damage);
+        }
         else
         {
             SupportSkill supportSkill = skill as SupportSkill;
@@ -28,6 +31,14 @@ public class AIControllerCommander : BaseControllerCommander
         }
 
         EndAction();
+    }
+
+    public override void Register()
+    {
+    }
+
+    public override void Unregister()
+    {
     }
 
 }

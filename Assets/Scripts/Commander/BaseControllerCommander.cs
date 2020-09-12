@@ -4,8 +4,13 @@ public abstract class BaseControllerCommander : ICommand
 
     public abstract void Execute();
 
+    public abstract void Register();
+
+    public abstract void Unregister();
+
     public void EndAction()
     {
         owner.EndAction();
     }
+
 }

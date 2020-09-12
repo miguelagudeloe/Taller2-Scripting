@@ -8,13 +8,13 @@ public class PlayerControllerCommander : BaseControllerCommander
         this.owner = owner;
     }
 
-    private void OnEnable()
+    public override void Register()
     {
         DisplaySkills.OnAttackSelected += Attack;
         DisplaySkills.OnSupportSelected += Support;
     }
 
-    private void OnDisable()
+    public override void Unregister()
     {
         DisplaySkills.OnAttackSelected -= Attack;
         DisplaySkills.OnSupportSelected -= Support;
@@ -26,7 +26,8 @@ public class PlayerControllerCommander : BaseControllerCommander
 
     private void Attack(AttackSkill attackSkill)
     {
-        Referee.Instance.CritterPlayer.Attack(attackSkill, Referee.Instance.CritterEnemy);
+        float damage = Referee.Instance.CritterPlayer.AttackDamage(attackSkill, Referee.Instance.CritterEnemy);
+        Referee.Instance.CritterEnemy.TakeDamage(damage);
         EndAction();
     }
 

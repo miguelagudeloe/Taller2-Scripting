@@ -34,6 +34,8 @@ public class DisplaySkills : MonoBehaviour
 
     private void ShowDisplay()
     {
+        // HideDisplay();
+
         dropdownAttackSkill.gameObject.SetActive(true);
         dropdownSupportSkill.gameObject.SetActive(true);
 
@@ -89,13 +91,13 @@ public class DisplaySkills : MonoBehaviour
     {
         if (dropdownAttackSkill.value != 0)
             OnAttackSelected?.Invoke(attackSkills[dropdownAttackSkill.value]);
-        HideDisplay();
+        // HideDisplay();
     }
 
     public void SelectSupportSkill()
     {
         if (dropdownSupportSkill.value != 0)
             OnSupportSelected?.Invoke(supportSkills[dropdownSupportSkill.value]);
-        HideDisplay();
+        // HideDisplay();
     }
 }

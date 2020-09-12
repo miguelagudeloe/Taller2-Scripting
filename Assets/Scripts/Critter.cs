@@ -8,7 +8,7 @@ using UnityEngine;
 public class Critter : MonoBehaviour
 {
     // Atributos
-    [SerializeField] private string name;
+    [SerializeField] private new string name;
     // [SerializeField] private GameObject prefab;
     [SerializeField] private float baseAttack;
     [SerializeField] private float baseDefense;
@@ -69,7 +69,7 @@ public class Critter : MonoBehaviour
             moveSet = skillsTemp;
         }
 
-        hp = (hp > 0) ? hp : 1;
+        hp = (hp > 0) ? hp : 0;
 
         ResetBoost();
     }
@@ -116,7 +116,7 @@ public class Critter : MonoBehaviour
         }
     }
 
-    public float Attack(AttackSkill skill, Critter enemy)
+    public float AttackDamage(AttackSkill skill, Critter enemy)
     {
         float affinityMultiplayer = Affinity.InteractValue(skill.Affinity, enemy.AffinityCritter);
         return (AttackValue + skill.Power) * affinityMultiplayer;

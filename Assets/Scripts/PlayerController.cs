@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnDisable()
     {
-
+        controller.Unregister();
     }
 
     private void Execute()
@@ -40,6 +40,8 @@ public class PlayerController : MonoBehaviour
             controller = new PlayerControllerCommander(this);
         else
             controller = new AIControllerCommander(this);
+
+        controller.Register();
     }
 }
 
