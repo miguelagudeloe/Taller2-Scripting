@@ -17,29 +17,25 @@ public class Referee : MonoBehaviour
 
     public static event EefereeEvent OnPlayerTurn;
     public static event EefereeEvent OnEnemyTurn;
+
+    public static event EefereeEvent OnPlayerCritterChange;
+    public static event EefereeEvent OnEnemyCritterChange;
+
     public delegate void EefereeEvent();
 
     int turn;
 
     public static Referee Instance { get; private set; }
 
-    public Critter CritterPlayer { get => critterPlayer; }
-    public Critter CritterEnemy { get => critterEnemy; }
+    public Critter AttackerCritter { get => attackerCritter; }
+    public Critter DefenderCritter { get => defenderCritter; }
 
     public Player Player { get => player; }
     public Player Enemy { get => enemy; }
 
-    private void OnEnable()
-    {
-        DisplaySkills.OnAttackSelected += Attack;
-        DisplaySkills.OnSupportSelected += Support;
-    }
+    public Critter CritterPlayer { get => critterPlayer; }
+    public Critter CritterEnemy { get => critterEnemy; }
 
-    private void OnDisable()
-    {
-        DisplaySkills.OnAttackSelected -= Attack;
-        DisplaySkills.OnSupportSelected -= Support;
-    }
 
     private void Awake()
     {
@@ -55,23 +51,28 @@ public class Referee : MonoBehaviour
         turn = 0;
     }
 
-    void Update()
+    private void EndTurn()
     {
-        
-    }
-
-    private void Attack(AttackSkill attackSkill)
-    {
-        attackerCritter.Attack(attackSkill, defenderCritter);
         if (defenderCritter.IsDead)
+        {
             SwapCritters(attackerPlayer, defenderPlayer, defenderCritter);
+            SetNextLiveCritter();
+        }
+
         NextTurn();
     }
 
-    private void Support(SupportSkill supportSkill)
+    private void SetNextLiveCritter()
     {
-        supportSkill.Use(attackerCritter);
-        NextTurn();
+        if (defenderPlayer.AliveCritters.Count > 0)
+            defenderCritter = defenderPlayer.AliveCritters[0];
+        else
+        {
+            defenderCritter = null;
+            // No hay mas critters vivos del defensor
+        }
+
+        NotificateCritterChange();
     }
 
     private void SwapCritters(Player playerTake, Player playerPut, Critter critter)
@@ -82,8 +83,8 @@ public class Referee : MonoBehaviour
 
     public void NextTurn()
     {
-
         turn++;
+
         if (turn == 1)
         {
             if (critterPlayer.BaseSpeed >= critterEnemy.BaseSpeed)
@@ -91,30 +92,24 @@ public class Referee : MonoBehaviour
             else
                 AssignContesters(enemy, player, critterEnemy, critterPlayer);
 
-
+            NotificateCritterChange();
         }
         else
         {
-
             if (attackerPlayer == enemy)
             {
                 if (player.AliveCritters.Count > 0)
                     AssignContesters(player, enemy, critterPlayer, critterEnemy);
-
                 else
                 {
                     // TODO: si llega aquí, es porque no tiene critters vivos, por ende, gana el otro jugador
-
                 }
 
             }
-
-
             else
             {
                 if (enemy.AliveCritters.Count > 0)
                     AssignContesters(enemy, player, critterEnemy, critterPlayer);
-
                 else
                 {
                     // TODO: si llega aquí, es porque no tiene critters vivos, por ende, gana el otro jugador
@@ -122,8 +117,8 @@ public class Referee : MonoBehaviour
 
             }
         }
-        Notificate();
 
+        NotificateAttackTurn();
     }
 
     void AssignContesters(Player attackerPlayer, Player defenderPlayer, Critter attackerCritter, Critter defenderCritter)
@@ -134,11 +129,27 @@ public class Referee : MonoBehaviour
         this.defenderCritter = defenderCritter;
     }
 
-    void Notificate()
+    void NotificateAttackTurn()
     {
         if (attackerPlayer == player)
             OnPlayerTurn?.Invoke();
         else
             OnEnemyTurn?.Invoke();
+    }
+
+    void NotificateCritterChange()
+    {
+        if (turn == 1)
+        {
+            OnEnemyCritterChange?.Invoke();
+            OnPlayerCritterChange?.Invoke();
+        }
+        else
+        {
+            if (defenderPlayer == player)
+                OnPlayerCritterChange?.Invoke();
+            else
+                OnEnemyCritterChange?.Invoke();
+        }
     }
 }

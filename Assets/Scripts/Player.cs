@@ -38,9 +38,6 @@ public class Player : MonoBehaviour
             if (!IsUnique(crittersTemp))
                 throw new Exception("No son Critters diferentes, además son más de 3");
         }
-
-        
-
     }
 
     private bool IsUnique(List<Critter> critters)
@@ -57,14 +54,12 @@ public class Player : MonoBehaviour
             deadCritters.Add(critter);
         else
             aliveCritters.Add(critter);
-        
     }
 
     public void RemoveCritter(Critter critter)
     {
         foreach (Critter critter_ in aliveCritters)
         {
-
             if (critter_ == critter)
             {
                 aliveCritters.Remove(critter);
@@ -72,22 +67,18 @@ public class Player : MonoBehaviour
                 break;
             }
         }
-            
     }
 
     public void RemoveDead()
     {
         foreach (Critter critter_ in aliveCritters)
         {
-
             if (critter_.IsDead)
             {
                 aliveCritters.Remove(critter_);
                 deadCritters.Add(critter_);
-               
             }
         }
-
     }
 
 

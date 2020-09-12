@@ -148,9 +148,9 @@ MonoBehaviour:
   name: el que voy a matar
   baseAttack: 10
   baseDefense: 10
-  baseSpeed: 1
+  baseSpeed: 10
   maxHP: 100
-  hp: 1
+  hp: 100
   affinity: 0
   moveSet:
   - {fileID: 11400000, guid: ab872c2e4e75d704ca46064f26359ad7, type: 2}

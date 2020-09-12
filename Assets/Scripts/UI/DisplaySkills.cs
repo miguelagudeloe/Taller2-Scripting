@@ -65,8 +65,6 @@ public class DisplaySkills : MonoBehaviour
         else
             dropdownAttackSkill.Show();
 
-
-
         dropdownSupportSkill.AddOptions(supportSkillList);
         if (supportSkillList.Count <= 1)
             dropdownSupportSkill.gameObject.SetActive(false);
