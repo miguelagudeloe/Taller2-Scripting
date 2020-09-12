@@ -23,13 +23,13 @@ public class DisplaySkills : MonoBehaviour
     private void OnEnable()
     {
         Referee.OnPlayerTurn += ShowDisplay;
-        Referee.OnEnemyTurn += HideDisplay;
+        PlayerController.OnEndAction += HideDisplay;
     }
 
     private void OnDisable()
     {
         Referee.OnPlayerTurn -= HideDisplay;
-        Referee.OnEnemyTurn -= ShowDisplay;
+        PlayerController.OnEndAction -= ShowDisplay;
     }
 
     private void ShowDisplay()
@@ -91,13 +91,13 @@ public class DisplaySkills : MonoBehaviour
     {
         if (dropdownAttackSkill.value != 0)
             OnAttackSelected?.Invoke(attackSkills[dropdownAttackSkill.value]);
-        // HideDisplay();
+        HideDisplay();
     }
 
     public void SelectSupportSkill()
     {
         if (dropdownSupportSkill.value != 0)
             OnSupportSelected?.Invoke(supportSkills[dropdownSupportSkill.value]);
-        // HideDisplay();
+        HideDisplay();
     }
 }
