@@ -54,7 +54,7 @@ public class Referee : MonoBehaviour
     {
         if (defenderCritter.IsDead)
         {
-            SwapCritters(attackerPlayer, defenderPlayer, defenderCritter);
+            SwapCritters(defenderPlayer, attackerPlayer, defenderCritter);
             SetNextLiveCritter();
         }
 
@@ -64,7 +64,11 @@ public class Referee : MonoBehaviour
     private void SetNextLiveCritter()
     {
         if (defenderPlayer.AliveCritters.Count > 0)
+        {
             defenderCritter = defenderPlayer.AliveCritters[0];
+            critterPlayer = player.AliveCritters[0];
+            critterEnemy = enemy.AliveCritters[0];
+        }
         else
         {
             defenderCritter = null;
