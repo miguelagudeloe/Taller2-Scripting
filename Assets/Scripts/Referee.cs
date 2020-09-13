@@ -5,9 +5,10 @@ using TMPro;
 
 public class Referee : MonoBehaviour
 {
+    [SerializeField] float coolDown;
+
     [SerializeField] Player player;
     [SerializeField] Player enemy;
-    [SerializeField] TextMeshProUGUI messageReferee;
 
     Critter attackerCritter;
     Critter defenderCritter;
@@ -19,6 +20,7 @@ public class Referee : MonoBehaviour
 
     public static event EefereeEvent OnPlayerTurn;
     public static event EefereeEvent OnEnemyTurn;
+    public static event EefereeEvent OnFinished;
 
     public static event EefereeEvent OnPlayerCritterChange;
     public static event EefereeEvent OnEnemyCritterChange;
@@ -26,6 +28,8 @@ public class Referee : MonoBehaviour
     public delegate void EefereeEvent();
 
     int turn;
+
+    bool hasFinished;
 
     public static Referee Instance { get; private set; }
 
@@ -37,6 +41,8 @@ public class Referee : MonoBehaviour
 
     public Critter CritterPlayer { get => critterPlayer; }
     public Critter CritterEnemy { get => critterEnemy; }
+    public Player AttackerPlayer { get => attackerPlayer; }
+    public Player DefenderPlayer { get => defenderPlayer; }
 
     private void Awake()
     {
@@ -47,32 +53,45 @@ public class Referee : MonoBehaviour
 
     private void Start()
     {
-        critterPlayer = player.AliveCritters[0];
-        critterEnemy = enemy.AliveCritters[0];
         turn = 0;
-        DisplayMessageTurn();
+        hasFinished = false;
     }
 
     private void EndTurn()
     {
         if (defenderCritter.IsDead)
         {
-            SwapCritters(attackerPlayer, defenderPlayer, defenderCritter);
+            SwapCritters(defenderPlayer, attackerPlayer, defenderCritter);
             SetNextLiveCritter();
         }
 
-        NextTurn();
+        if (!hasFinished)
+            NextTurn();
     }
 
     private void SetNextLiveCritter()
     {
         if (defenderPlayer.AliveCritters.Count > 0)
+        {
             defenderCritter = defenderPlayer.AliveCritters[0];
+            critterPlayer = player.AliveCritters[0];
+            critterEnemy = enemy.AliveCritters[0];
+        }
         else
         {
             defenderCritter = null;
+
+            if (defenderPlayer == player)
+                critterPlayer = null;
+            else
+                critterEnemy = null;
+
+            hasFinished = true;
+
             Unregister();
-            print("End of match");
+            DisplayMessage("End of game");
+
+            OnFinished?.Invoke();
         }
 
         NotificateCritterChange();
@@ -90,6 +109,9 @@ public class Referee : MonoBehaviour
 
         if (turn == 1)
         {
+            critterPlayer = player.AliveCritters[0];
+            critterEnemy = enemy.AliveCritters[0];
+
             if (critterPlayer.BaseSpeed >= critterEnemy.BaseSpeed)
                 AssignContesters(player, enemy, critterPlayer, critterEnemy);
             else
@@ -104,27 +126,17 @@ public class Referee : MonoBehaviour
             {
                 if (player.AliveCritters.Count > 0)
                     AssignContesters(player, enemy, critterPlayer, critterEnemy);
-                else
-                {
-                    // TODO: si llega aquí, es porque no tiene critters vivos, por ende, gana el otro jugador
-                }
-
             }
             else
             {
                 if (enemy.AliveCritters.Count > 0)
                     AssignContesters(enemy, player, critterEnemy, critterPlayer);
-                else
-                {
-                    // TODO: si llega aquí, es porque no tiene critters vivos, por ende, gana el otro jugador
-                }
-
             }
         }
 
-        NotificateAttackTurn();
+        Invoke("NotificateAttackTurn", coolDown);
 
-        DisplayMessageTurn();
+        DisplayMessage($"Turn {turn} \nAttacker {attackerPlayer.name} \nCritter {attackerCritter.name}");
     }
 
     void Register()
@@ -169,8 +181,8 @@ public class Referee : MonoBehaviour
         }
     }
 
-    void DisplayMessageTurn()
+    void DisplayMessage(string msg)
     {
-        messageReferee.text = "Turno " + turn.ToString() + ", turno de " + attackerPlayer.name + ", con critter " + attackerCritter.name;
+        DisplayDialogBox.Instance.SetRefereeText(msg);
     }
 }

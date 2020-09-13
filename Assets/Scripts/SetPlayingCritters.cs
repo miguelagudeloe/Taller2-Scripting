@@ -10,18 +10,19 @@ public class SetPlayingCritters : MonoBehaviour
     private void OnEnable()
     {
         Referee.OnPlayerCritterChange += PlayerCritterChange;
-        Referee.OnPlayerCritterChange += EnemyCritterChange;
+        Referee.OnEnemyCritterChange += EnemyCritterChange;
     }
 
     private void OnDisable()
     {
         Referee.OnPlayerCritterChange -= PlayerCritterChange;
-        Referee.OnPlayerCritterChange -= EnemyCritterChange;
+        Referee.OnEnemyCritterChange -= EnemyCritterChange;
     }
 
     void PlayerCritterChange()
     {
         Critter critter = Referee.Instance.CritterPlayer;
+
         if (critter == null)
             playerCritter.SetActive(false);
         else

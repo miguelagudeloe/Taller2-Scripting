@@ -6,10 +6,15 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] ControllType controllType;
 
+    [Header("Only AI Controll")]
+    [SerializeField] float thinkTime;
+
     ICommand controller;
 
     public delegate void PlayerEvent();
     public static event PlayerEvent OnEndAction;
+
+    string msg;
 
     private void OnEnable()
     {
@@ -29,8 +34,24 @@ public class PlayerController : MonoBehaviour
         controller.Execute();
     }
 
-    public void EndAction()
+    public void EndAction(string msg)
     {
+        this.msg = msg;
+
+        if (controllType == ControllType.IA)
+            Invoke("EndActionAI", thinkTime);
+        else
+            EndActionPlayer();
+    }
+
+    private void EndActionAI()
+    {
+        DisplayDialogBox.Instance.SetEnemyText(msg);
+        OnEndAction?.Invoke();
+    }
+    private void EndActionPlayer()
+    {
+        DisplayDialogBox.Instance.SetPlayerText(msg);
         OnEndAction?.Invoke();
     }
 
@@ -39,7 +60,7 @@ public class PlayerController : MonoBehaviour
         if (controllType == ControllType.Player)
             controller = new PlayerControllerCommander(this);
         else
-            controller = new AIControllerCommander(this);
+            controller = new AIControllerCommander(this, thinkTime);
 
         controller.Register();
     }

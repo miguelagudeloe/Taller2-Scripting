@@ -28,13 +28,17 @@ public class PlayerControllerCommander : BaseControllerCommander
     {
         float damage = Referee.Instance.CritterPlayer.AttackDamage(attackSkill, Referee.Instance.CritterEnemy);
         Referee.Instance.CritterEnemy.TakeDamage(damage);
-        EndAction();
+
+        string msg = $"Used {attackSkill.Name} \nDamage {damage}";
+        EndAction(msg);
     }
 
     private void Support(SupportSkill supportSkill)
     {
-        supportSkill.Use(Referee.Instance.DefenderCritter);
-        EndAction();
+        supportSkill.Use(Referee.Instance.AttackerCritter);
+
+        string msg = $"Selected {supportSkill.Name} \n{Referee.Instance.AttackerCritter.LastUpgraded}";
+        EndAction(msg);
     }
 
 }

@@ -10,20 +10,37 @@ public class DisplayHealth : MonoBehaviour
 
     private void OnEnable()
     {
-        Critter.OnDamageTake += Refresh;
+        Referee.OnPlayerTurn += Refresh;
+        Referee.OnEnemyTurn += Refresh;
+        Referee.OnFinished += Desactivate;
     }
 
-    private void OnDisable()
+    private void Unregister()
     {
-        Critter.OnDamageTake -= Refresh;
+        Referee.OnPlayerTurn -= Refresh;
+        Referee.OnEnemyTurn -= Refresh;
+        Referee.OnFinished -= Desactivate;
     }
 
-    void Refresh(Critter sender)
+    private void Refresh()
     {
-        sliderPlayer.maxValue = Referee.Instance.CritterPlayer.MaxHP;
-        sliderAI.maxValue = Referee.Instance.CritterEnemy.MaxHP;
+        if (Referee.Instance.CritterPlayer != null)
+        {
+            sliderPlayer.maxValue = Referee.Instance.CritterPlayer.MaxHP;
+            sliderPlayer.value = Referee.Instance.CritterPlayer.Hp;
+        }
+        if (Referee.Instance.CritterEnemy != null)
+        {
+            sliderAI.maxValue = Referee.Instance.CritterEnemy.MaxHP;
+            sliderAI.value = Referee.Instance.CritterEnemy.Hp;
+        }
+    }
 
-        sliderPlayer.value = Referee.Instance.CritterPlayer.Hp;
-        sliderAI.value = Referee.Instance.CritterEnemy.Hp;
+    private void Desactivate()
+    {
+        sliderPlayer.transform.gameObject.SetActive(false);
+        sliderAI.transform.gameObject.SetActive(false);
+
+        Unregister();
     }
 }
