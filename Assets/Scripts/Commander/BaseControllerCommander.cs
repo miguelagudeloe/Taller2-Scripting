@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public abstract class BaseControllerCommander : ICommand
 {
     protected PlayerController owner;
@@ -8,9 +10,9 @@ public abstract class BaseControllerCommander : ICommand
 
     public abstract void Unregister();
 
-    public void EndAction()
+    public void EndAction(string msg)
     {
-        owner.EndAction();
+        owner.EndAction(msg);
     }
 
 }

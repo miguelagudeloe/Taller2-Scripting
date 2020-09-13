@@ -19,12 +19,11 @@ public class Critter : MonoBehaviour
     [Expandable]
     [SerializeField] private Skill[] moveSet;
 
-    public delegate void CritterEvent(Critter sender);
-    public static event CritterEvent OnDamageTake;
-
     private float attackBoost;
     private float defenseBoost;
     private float speedBoost;
+
+    private string lastUpgraded;
 
     private bool isDead;
 
@@ -39,7 +38,7 @@ public class Critter : MonoBehaviour
     public void Init()
     {
         hp = maxHP;
-        TakeDamage(0);
+        UpdateIsDead();
 
         // A estos no les hacemos excepción porque podemos clampearlos
         baseAttack = Mathf.Clamp(baseAttack, 10, 100);
@@ -48,9 +47,8 @@ public class Critter : MonoBehaviour
 
         //Ver que las skills sean entre 1 y 3 y sean únicas
         if (moveSet.Length < 1)
-        {
             throw new Exception("Debe de tener almenos 1 skill");
-        }
+
         else if (moveSet.Length <= 3)
         {
             if (!IsUnique(moveSet))
@@ -95,7 +93,11 @@ public class Critter : MonoBehaviour
         {
             attackBoost += porcent / 100;
             atributesUpgraded["Attack"] += 1;
+
+            lastUpgraded = $"Attack Upgraded in {porcent}%";
         }
+        else
+            lastUpgraded = "Attack is no longer able to upgrade";
     }
 
     public void BoostDefense(float porcent)
@@ -104,7 +106,11 @@ public class Critter : MonoBehaviour
         {
             defenseBoost += porcent / 100;
             atributesUpgraded["Defense"] += 1;
+
+            lastUpgraded = $"Defense Upgraded in {porcent}%";
         }
+        else
+            lastUpgraded = "Defense is no longer able to upgrade";
     }
 
     public void BoostSpeed(float porcent)
@@ -113,8 +119,13 @@ public class Critter : MonoBehaviour
         {
             speedBoost += porcent / 100;
             atributesUpgraded["Speed"] += 1;
+
+            lastUpgraded = $"Speed Upgraded in {porcent}%";
         }
+        else
+            lastUpgraded = "Speed is no longer able to upgrade";
     }
+
 
     public float AttackDamage(AttackSkill skill, Critter enemy)
     {
@@ -126,9 +137,12 @@ public class Critter : MonoBehaviour
     {
         hp -= damage;
         hp = Mathf.Clamp(hp, 0, maxHP);
-        isDead = (hp <= 0);
+        UpdateIsDead();
+    }
 
-        OnDamageTake?.Invoke(this);
+    private void UpdateIsDead()
+    {
+        isDead = (hp <= 0);
     }
 
     public override string ToString()
@@ -149,5 +163,6 @@ public class Critter : MonoBehaviour
     public float Hp { get => hp; }
     public float MaxHP { get => maxHP; }
     public bool IsDead { get => isDead; }
+    public string LastUpgraded { get => lastUpgraded; }
 }
 

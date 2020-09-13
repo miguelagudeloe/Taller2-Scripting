@@ -22,6 +22,7 @@ public class SetPlayingCritters : MonoBehaviour
     void PlayerCritterChange()
     {
         Critter critter = Referee.Instance.CritterPlayer;
+
         if (critter == null)
             playerCritter.SetActive(false);
         else

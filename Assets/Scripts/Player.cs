@@ -58,15 +58,6 @@ public class Player : MonoBehaviour
 
     public void RemoveCritter(Critter critter)
     {
-        /* foreach (Critter critter_ in aliveCritters)
-        {
-            if (critter_ == critter)
-            {
-                aliveCritters.Remove(critter);
-                deadCritters.Add(critter);
-                break;
-            }
-        } */
         if (aliveCritters.Count > 0)
             aliveCritters.RemoveAt(0);
     }

@@ -1,15 +1,38 @@
+using System.Collections;
+using UnityEngine;
 
 public class AIControllerCommander : BaseControllerCommander
 {
+    float thinkTime;
+
     System.Random rand;
 
-    public AIControllerCommander(PlayerController owner)
+    float currentTime;
+
+    public AIControllerCommander(PlayerController owner, float time)
     {
         this.owner = owner;
+        thinkTime = time;
+        currentTime = 0;
         rand = new System.Random();
     }
 
     public override void Execute()
+    {
+        // currentTime = thinkTime;
+        // StartCoroutine("Attack");
+        Attack();
+    }
+
+    // private void Update()
+    // {
+    //     if (currentTime == thinkTime)
+    //         Attack();
+
+    //     currentTime -= Time.deltaTime;
+    // }
+
+    private void Attack()
     {
         Critter mine = Referee.Instance.AttackerCritter;
         Critter enemy = Referee.Instance.DefenderCritter;
@@ -19,18 +42,24 @@ public class AIControllerCommander : BaseControllerCommander
 
         Skill skill = moves[ind];
 
+        string msg;
+
         if (skill is AttackSkill)
         {
             float damage = mine.AttackDamage(skill as AttackSkill, enemy);
             Referee.Instance.CritterPlayer.TakeDamage(damage);
+
+            msg = $"Used {skill.Name}, Damage {damage}";
         }
         else
         {
             SupportSkill supportSkill = skill as SupportSkill;
             supportSkill.Use(mine);
+
+            msg = $"Selected {skill.Name}, {mine.LastUpgraded}";
         }
 
-        EndAction();
+        EndAction(msg);
     }
 
     public override void Register()

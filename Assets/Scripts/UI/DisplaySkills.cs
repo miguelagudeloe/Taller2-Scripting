@@ -34,8 +34,6 @@ public class DisplaySkills : MonoBehaviour
 
     private void ShowDisplay()
     {
-        Debug.Log("Se llamo prender Display");
-
         // HideDisplay();
 
         dropdownAttackSkill.gameObject.SetActive(true);
@@ -82,7 +80,6 @@ public class DisplaySkills : MonoBehaviour
 
     private void HideDisplay()
     {
-        Debug.Log("Se llamo apagar Display");
         dropdownAttackSkill.ClearOptions();
         attackSkills.Clear();
 
@@ -97,7 +94,7 @@ public class DisplaySkills : MonoBehaviour
     {
         if (dropdownAttackSkill.value != 0)
             OnAttackSelected?.Invoke(attackSkills[dropdownAttackSkill.value]);
-         //HideDisplay();
+        //HideDisplay();
     }
 
     public void SelectSupportSkill()
