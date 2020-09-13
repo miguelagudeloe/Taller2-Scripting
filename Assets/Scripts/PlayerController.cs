@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
         if (controllType == ControllType.AI)
             Invoke("ExecuteAction", thinkTime);
         else
-            controller.Execute();
+            ExecuteAction();
     }
 
     private void ExecuteAction()
@@ -47,7 +47,6 @@ public class PlayerController : MonoBehaviour
         this.msg = msg;
 
         if (controllType == ControllType.AI)
-            // Invoke("EndActionAI", thinkTime);
             EndActionAI();
         else
             EndActionPlayer();

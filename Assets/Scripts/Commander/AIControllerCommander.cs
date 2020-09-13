@@ -56,7 +56,7 @@ public class AIControllerCommander : BaseControllerCommander
             SupportSkill supportSkill = skill as SupportSkill;
             supportSkill.Use(mine);
 
-            msg = $"Selected {skill.Name} \n {mine.LastUpgraded}";
+            msg = $"Selected {skill.Name} \n{mine.LastUpgraded}";
         }
 
         EndAction(msg);
