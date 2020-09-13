@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279e6f8cd0bc5944d80e277478cb197b, type: 3}
   m_Name: Mug
   m_EditorClassIdentifier: 
-  nombre: Mug
-  affinity: 3
-  power: 8
+  name: Mug
+  affinity: 4
   debuf: 10

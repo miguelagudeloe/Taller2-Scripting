@@ -136,7 +136,7 @@ public class Referee : MonoBehaviour
 
         Invoke("NotificateAttackTurn", coolDown);
 
-        DisplayMessage($"Turn {turn} \nAttacker {attackerPlayer.name} \nCritter {attackerCritter.name}");
+        DisplayMessage($"Turn {turn} \nAttacker {attackerPlayer.name} \nCritter {attackerCritter.Name}");
     }
 
     void Register()

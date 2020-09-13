@@ -10,9 +10,19 @@ public class DisplayCount : MonoBehaviour
     [SerializeField] TextMeshProUGUI aliveEnemy;
     [SerializeField] TextMeshProUGUI deadEnemy;
 
+    private void OnEnable()
+    {
+        Referee.OnPlayerCritterChange += CritterChange;
+        Referee.OnEnemyCritterChange += CritterChange;
+    }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
+    {
+        Referee.OnPlayerCritterChange -= CritterChange;
+        Referee.OnEnemyCritterChange -= CritterChange;
+    }
+
+    private void CritterChange()
     {
         alivePlayer.text = $"x{Referee.Instance.Player.AliveCritters.Count.ToString()}";
         deadPlayer.text = $"x{Referee.Instance.Player.DeadCritters.Count.ToString()}";

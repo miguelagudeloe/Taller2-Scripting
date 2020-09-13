@@ -145,11 +145,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 838eab201d515ee4d9e4000e96aebdaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: el que voy a matar
-  baseAttack: 10
-  baseDefense: 10
-  baseSpeed: 10
-  maxHP: 0
+  name: Gio
+  baseAttack: 43
+  baseDefense: 78
+  baseSpeed: 24
+  maxHP: 140
   hp: 0
   affinity: 0
   moveSet:

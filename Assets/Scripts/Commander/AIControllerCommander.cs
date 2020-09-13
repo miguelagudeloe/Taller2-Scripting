@@ -49,14 +49,14 @@ public class AIControllerCommander : BaseControllerCommander
             float damage = mine.AttackDamage(skill as AttackSkill, enemy);
             Referee.Instance.CritterPlayer.TakeDamage(damage);
 
-            msg = $"Used {skill.Name}, Damage {damage}";
+            msg = $"Used {skill.Name} \nDamage {damage}";
         }
         else
         {
             SupportSkill supportSkill = skill as SupportSkill;
             supportSkill.Use(mine);
 
-            msg = $"Selected {skill.Name}, {mine.LastUpgraded}";
+            msg = $"Selected {skill.Name} \n {mine.LastUpgraded}";
         }
 
         EndAction(msg);

@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: baadef40b399fd9439233cc98e84affb, type: 3}
-  m_Name: StickStuck
+  m_Name: CelestialDebuf
   m_EditorClassIdentifier: 
-  name: Stick Stuck
-  affinity: 2
-  debuf: 30
+  name: Celestial Debuf
+  affinity: 1
+  power: 32
+  debuf: 20

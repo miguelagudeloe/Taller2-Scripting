@@ -10,22 +10,32 @@ PrefabInstance:
     - target: {fileID: 5416058465163570187, guid: 842ee6607a88853429c7e518a61c4a25,
         type: 3}
       propertyPath: name
-      value: Flareon2
+      value: Pikachu
       objectReference: {fileID: 0}
     - target: {fileID: 5416058465163570187, guid: 842ee6607a88853429c7e518a61c4a25,
         type: 3}
       propertyPath: baseAttack
-      value: 2
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 5416058465163570187, guid: 842ee6607a88853429c7e518a61c4a25,
         type: 3}
       propertyPath: baseDefense
-      value: 14
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 5416058465163570187, guid: 842ee6607a88853429c7e518a61c4a25,
         type: 3}
       propertyPath: maxHP
-      value: 61
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 5416058465163570187, guid: 842ee6607a88853429c7e518a61c4a25,
+        type: 3}
+      propertyPath: baseSpeed
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 5416058465163570187, guid: 842ee6607a88853429c7e518a61c4a25,
+        type: 3}
+      propertyPath: affinity
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5624963180732909521, guid: 842ee6607a88853429c7e518a61c4a25,
         type: 3}

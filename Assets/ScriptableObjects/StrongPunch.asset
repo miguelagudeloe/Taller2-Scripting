@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baadef40b399fd9439233cc98e84affb, type: 3}
-  m_Name: StickStuck
+  m_Script: {fileID: 11500000, guid: 5b5b0a8e0e6d0cf4f9854be70664c937, type: 3}
+  m_Name: StrongPunch
   m_EditorClassIdentifier: 
-  name: Stick Stuck
-  affinity: 2
-  debuf: 30
+  name: Strong Punch
+  affinity: 4
+  power: 30

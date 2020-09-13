@@ -6,9 +6,9 @@ using UnityEngine;
 [Serializable]
 public class Skill : ScriptableObject
 {
-    [SerializeField] private string nombre;
+    [SerializeField] private new string name;
     [SerializeField] private Affinity.AffinityType affinity;
 
-    public string Name { get => nombre; }
+    public string Name { get => name; }
     internal Affinity.AffinityType Affinity { get => affinity; }
 }

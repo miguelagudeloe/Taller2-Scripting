@@ -31,6 +31,14 @@ public class PlayerController : MonoBehaviour
 
     private void Execute()
     {
+        if (controllType == ControllType.AI)
+            Invoke("ExecuteAction", thinkTime);
+        else
+            controller.Execute();
+    }
+
+    private void ExecuteAction()
+    {
         controller.Execute();
     }
 
@@ -38,8 +46,9 @@ public class PlayerController : MonoBehaviour
     {
         this.msg = msg;
 
-        if (controllType == ControllType.IA)
-            Invoke("EndActionAI", thinkTime);
+        if (controllType == ControllType.AI)
+            // Invoke("EndActionAI", thinkTime);
+            EndActionAI();
         else
             EndActionPlayer();
     }
@@ -49,6 +58,7 @@ public class PlayerController : MonoBehaviour
         DisplayDialogBox.Instance.SetEnemyText(msg);
         OnEndAction?.Invoke();
     }
+
     private void EndActionPlayer()
     {
         DisplayDialogBox.Instance.SetPlayerText(msg);
@@ -69,5 +79,5 @@ public class PlayerController : MonoBehaviour
 public enum ControllType
 {
     Player,
-    IA
+    AI
 }
