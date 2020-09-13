@@ -45,3 +45,5 @@ https://forum.unity.com/threads/editor-tool-better-scriptableobject-inspector-ed
 * Tower Defense - Grass Background by Hassekf: https://opengameart.org/content/tower-defense-grass-background
 
 * UI Assets by Fast Solutions channel on youtube: https://www.youtube.com/watch?v=7zMssEdi-uM&list=PLgAF6rpCsTCj9c3__jGQCYgtfQFj1TCoB&ab_channel=FastSolution
+
+* La font PressStart2P se sacó de un proyecto antiguo, así que no se conoce de dónde se descargó
