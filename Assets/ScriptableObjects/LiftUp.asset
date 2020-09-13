@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49d60791d311ca49929cd14d0a2128f, type: 3}
   m_Name: LiftUp
   m_EditorClassIdentifier: 
-  nombre: Lift Up
+  name: Lift Up
   affinity: 1
   power: 10
   debuf: 20

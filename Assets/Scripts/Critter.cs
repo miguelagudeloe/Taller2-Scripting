@@ -19,6 +19,9 @@ public class Critter : MonoBehaviour
     [Expandable]
     [SerializeField] private Skill[] moveSet;
 
+    public static event CritterEvent OnDamaged;
+    public delegate void CritterEvent();
+
     private float attackBoost;
     private float defenseBoost;
     private float speedBoost;
@@ -138,6 +141,7 @@ public class Critter : MonoBehaviour
         hp -= damage;
         hp = Mathf.Clamp(hp, 0, maxHP);
         UpdateIsDead();
+        OnDamaged?.Invoke();
     }
 
     private void UpdateIsDead()
@@ -151,7 +155,6 @@ public class Critter : MonoBehaviour
     }
 
     public string Name { get => name; }
-    // public GameObject Prefab { get => prefab; }
     public float BaseAttack { get => baseAttack; }
     public float AttackValue { get => baseAttack * attackBoost; }
     public float BaseDefense { get => baseDefense; }

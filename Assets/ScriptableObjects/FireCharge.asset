@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b5b0a8e0e6d0cf4f9854be70664c937, type: 3}
   m_Name: FireCharge
   m_EditorClassIdentifier: 
-  nombre: FireCharge
+  name: Fire Charge
   affinity: 0
   power: 10

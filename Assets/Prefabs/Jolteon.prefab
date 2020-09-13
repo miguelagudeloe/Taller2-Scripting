@@ -127,7 +127,7 @@ Transform:
   m_GameObject: {fileID: 4669391991712339539}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 526217875809805674}
   m_Father: {fileID: 0}
@@ -145,11 +145,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 838eab201d515ee4d9e4000e96aebdaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  baseAttack: 0
-  baseDefense: 0
-  baseSpeed: 0
-  maxHP: 0
+  name: Juan
+  baseAttack: 48
+  baseDefense: 78
+  baseSpeed: 42
+  maxHP: 140
   hp: 0
-  affinity: 0
-  moveSet: []
+  affinity: 5
+  moveSet:
+  - {fileID: 11400000, guid: 5d6f0addeb2996a4eb71907013013ee6, type: 2}
+  - {fileID: 11400000, guid: 3634bc0f0c7a11e459ee2b2ecde5d268, type: 2}
+  - {fileID: 11400000, guid: b71abcfe30109da4b8f7c4291b85ade2, type: 2}

@@ -10,6 +10,7 @@ public class DisplayHealth : MonoBehaviour
 
     private void OnEnable()
     {
+        Critter.OnDamaged += Refresh;
         Referee.OnPlayerTurn += Refresh;
         Referee.OnEnemyTurn += Refresh;
         Referee.OnFinished += Desactivate;
@@ -17,6 +18,7 @@ public class DisplayHealth : MonoBehaviour
 
     private void Unregister()
     {
+        Critter.OnDamaged -= Refresh;
         Referee.OnPlayerTurn -= Refresh;
         Referee.OnEnemyTurn -= Refresh;
         Referee.OnFinished -= Desactivate;

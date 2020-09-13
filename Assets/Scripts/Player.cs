@@ -77,7 +77,7 @@ public class Player : MonoBehaviour
 
     public List<Critter> AliveCritters { get => aliveCritters; }
 
-    public List<Critter> DeadCritters { get => aliveCritters; }
+    public List<Critter> DeadCritters { get => deadCritters; }
 
 }
 

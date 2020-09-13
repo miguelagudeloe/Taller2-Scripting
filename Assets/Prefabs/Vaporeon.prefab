@@ -145,12 +145,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 838eab201d515ee4d9e4000e96aebdaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: el vivo
-  baseAttack: 10
-  baseDefense: 10
-  baseSpeed: 1
-  maxHP: 50
-  hp: 50
-  affinity: 0
+  name: The Broken
+  baseAttack: 99
+  baseDefense: 100
+  baseSpeed: 49
+  maxHP: 160
+  hp: 0
+  affinity: 3
   moveSet:
-  - {fileID: 11400000, guid: 5d6f0addeb2996a4eb71907013013ee6, type: 2}
+  - {fileID: 11400000, guid: 3634bc0f0c7a11e459ee2b2ecde5d268, type: 2}
+  - {fileID: 11400000, guid: 3b4a12b08d7b4c9489473bfd2b9ce502, type: 2}
+  - {fileID: 11400000, guid: 6a2337b7efa745e4d81fd8f66ec7c074, type: 2}

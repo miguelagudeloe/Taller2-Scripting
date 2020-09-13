@@ -1868,8 +1868,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aliveCritters:
-  - {fileID: -4059071263737332012, guid: 5483340735673a14b934a4e1db46c53c, type: 3}
+  - {fileID: 5773333090915585930, guid: 1863d6a33dce38646a0b6a4c0254cb7e, type: 3}
   - {fileID: 5416058465163570187, guid: 842ee6607a88853429c7e518a61c4a25, type: 3}
+  - {fileID: 7834087931253010865, guid: 20ae396d923cce44fb03e13e41da3202, type: 3}
   deadCritters: []
 --- !u!4 &346092736
 Transform:
@@ -2487,8 +2488,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aliveCritters:
-  - {fileID: 5773333090915585930, guid: 1863d6a33dce38646a0b6a4c0254cb7e, type: 3}
-  - {fileID: 7834087931253010865, guid: 20ae396d923cce44fb03e13e41da3202, type: 3}
+  - {fileID: 5621414723580712048, guid: 0bf6e60e07bb38b41b5224faceff6411, type: 3}
+  - {fileID: -6059960125282985573, guid: eaf75a9f29c6a6547b93450af53d387e, type: 3}
+  - {fileID: -4059071263737332012, guid: 5483340735673a14b934a4e1db46c53c, type: 3}
   deadCritters: []
 --- !u!4 &515288940
 Transform:
@@ -5827,7 +5829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f8f73ba1a98d614bbc6b589d292b615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coolDown: 3
+  coolDown: 4
   dialog: {fileID: 337529392}
 --- !u!1 &1690148064
 GameObject:

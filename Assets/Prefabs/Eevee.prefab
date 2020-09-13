@@ -145,13 +145,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 838eab201d515ee4d9e4000e96aebdaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: el vivo
-  baseAttack: 10
-  baseDefense: 10
-  baseSpeed: 2
-  maxHP: 50
-  hp: 40
-  affinity: 0
+  name: Campillo
+  baseAttack: 46
+  baseDefense: 76
+  baseSpeed: 15
+  maxHP: 100
+  hp: 0
+  affinity: 5
   moveSet:
   - {fileID: 11400000, guid: 5d6f0addeb2996a4eb71907013013ee6, type: 2}
   - {fileID: 11400000, guid: 6a2337b7efa745e4d81fd8f66ec7c074, type: 2}
+  - {fileID: 11400000, guid: 6bac3fefc3fdf484896dba84d4dfcbcf, type: 2}

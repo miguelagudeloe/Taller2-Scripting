@@ -44,15 +44,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 838eab201d515ee4d9e4000e96aebdaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: el muerto
-  baseAttack: 10
-  baseDefense: 10
-  baseSpeed: 1
-  maxHP: 0
+  name: Miguel
+  baseAttack: 36
+  baseDefense: 87
+  baseSpeed: 23
+  maxHP: 120
   hp: 0
-  affinity: 0
+  affinity: 4
   moveSet:
   - {fileID: 11400000, guid: b71abcfe30109da4b8f7c4291b85ade2, type: 2}
+  - {fileID: 11400000, guid: 6bac3fefc3fdf484896dba84d4dfcbcf, type: 2}
+  - {fileID: 11400000, guid: 3b4a12b08d7b4c9489473bfd2b9ce502, type: 2}
 --- !u!1 &7199768181608195744
 GameObject:
   m_ObjectHideFlags: 0
