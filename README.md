@@ -18,7 +18,8 @@ skills dependiendo de los tipos de skills, y al momento de seleccionar una skill
   - En nuestro caso, el control de toma de decisiones es un observer, por el motivo que este control notifica el Referee de que ya terminó de tomar decisiiones para que el Referee pueda cambiar turno. Esto se hacer porque no podemos saber el jugador cuándo va a seleccionar un ataque o un soporte, es decir, no podemos estar seguros que después de llamar la función ejecutar del commander el jugador ya ha hecho su movimiento. Esto no sucede con el enemigo, que después de llamarse el execute ya ha seleccionado movimiento. Así que el Referee espera a que el PlayerController llame el evento OnEndAccion del jugador/enemigo.
   - Varias clases más notifican eventos, y muchas otras escuchan éstos y ejecutan métodos acorde al evento el que estén suscritas. Ejemplos pueden ser, el Referee llama el evento del cambio de turno, y los scripts de Display actúan acorde al turno de un jugador específico, ya sea cambiando la vida de los Critters en juego o actualizando los contadores de los Critters vivos y muertos de cada jugador. 
  
-*Disclaimer*
+***Disclaimer***
+
 No estamos seguros que solamente suscribirse, desuscribirse y escuchar un método sea suficiente para considerarse observer, además que ellos mismos deciden cuándo suscribirse y desuscribirse.
 
 
